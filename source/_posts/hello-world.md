@@ -9,7 +9,7 @@ date: 2023-10-12 11:45:14
 ### 创建一个新的发布  Create a new post
 
 ``` bash
-$ hexo new "My New Post"
+$ ``hexo `new` "My New Post"``
 ```
 
 更多信息： [Writing](https://hexo.io/docs/writing.html)
