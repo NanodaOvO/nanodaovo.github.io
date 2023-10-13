@@ -6,7 +6,8 @@ tags: testing
 
 先把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
 
-<h1 align="center">⚠WARNING!!!!请下载原神来获得阅读本文的权限⚠⚠</h1>
+<h1 align="center">⚠WARNING!!!!
+请下载原神来获得阅读本文的权限</h1>
 
 `git clone https://www.yuanshen.com.git`
 
@@ -104,7 +105,7 @@ _ _  _   _
 
 ## 转义符语法の应用
 
-能当做转义符的符号太多了，建议直接阅读[markdown官方教程](https://markdown.com.cn/basic-syntax/escaping-characters.html "z正版教程，童叟无欺")
+能当做转义符的符号太多了，建议直接阅读[markdown官方教程](https://markdown.com.cn/basic-syntax/escaping-characters.html "正版教程，童叟无欺")
 我们只介绍一个`\`吧
 \**强调**了吗？如强！
 
