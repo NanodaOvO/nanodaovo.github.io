@@ -4,11 +4,11 @@ date: 2023-10-13 12:00:00
 tags: testing
 ---
 
-先把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
+[先][1]把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
 
 <h1 align="center">⚠⚠⚠WARNING!!!!请下载rust来获得阅读本文的权限！⚠⚠⚠</h1>
 
- [使用rustup安装rust](https://www.rust-lang.org/zh-CN/tools/install)
+ [使用Rustup安装rust](https://www.rust-lang.org/zh-CN/tools/install)
 
 # 基本语法
 
@@ -84,9 +84,7 @@ int main(){
 这是我的bilibili个人主页：**[NanodaOvO](https://space.bilibili.com/287889648 "这里住着一个废物")**
 这也我的bilibili个人主页：[`NanodaOvO`](https://space.bilibili.com/287889648 "这里住着一个废物")
 
-嘿，我是说，你还没有下载[原神](#请下载原神以获取阅读本文的权限)吧？快去下载！
-
-[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"
+嘿，我是说，你还没有下载[Rust](#ruststart)吧？快去下载！
 
 ## 分隔符语法の应用
 很不巧，如果你是一个狂热的奇特分隔符爱好者，那么这里或许不太适合你
@@ -138,6 +136,6 @@ _ _  _   _
 |   |   |   |
 |   |   |   |
 
-
+[1]: https://nanodaovo.github.io/2023/10/13/test/#ruststart
 
 
