@@ -5,7 +5,8 @@ tags: testing
 ---
 
 先把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
-# 请下载原神以获取阅读本文的权限
+
+<h1 align="center">⚠WARNING!!!!请下载原神来获得阅读本文的权限⚠⚠</h1>
 
 `git clone https://www.yuanshen.com.git`
 
