@@ -4,7 +4,7 @@ date: 2023-10-13 12:00:00
 tags: testing
 ---
 
-[先][1]把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
+先把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
 
 <h1 align="center">⚠⚠⚠WARNING!!!!请下载rust来获得阅读本文的权限！⚠⚠⚠</h1>
 
@@ -84,7 +84,7 @@ int main(){
 这是我的bilibili个人主页：**[NanodaOvO](https://space.bilibili.com/287889648 "这里住着一个废物")**
 这也我的bilibili个人主页：[`NanodaOvO`](https://space.bilibili.com/287889648 "这里住着一个废物")
 
-嘿，我是说，你还没有下载[Rust](#1)吗？快去下载！
+嘿，我是说，你还没有下载[Rust](https://www.rust-lang.org/zh-CN/tools/install)吗？快去下载！
 
 ## 分隔符语法の应用
 很不巧，如果你是一个狂热的奇特分隔符爱好者，那么这里或许不太适合你
@@ -132,15 +132,14 @@ _ _  _   _
 
 ## 围栏代码块语法の应用
 
-[参见上文](#代码语法强调语法の应用)
+[参见上文](#代码语法，强调语法の应用)
 
 ## 表格语法の应用
 
-|            |            |            |
-|------------|------------|------------|
-|            |            |            |
-|            |            |            |
+|政治左            |政治中            |政治右            |
+| :--- | :---: | ---: |
+|   社群主义   |    民主社会主义       |    施特拉瑟主义    |
+|   无政府资本主义   |   自由主义         |      纳粹主义      |
 
-[1]: https://nanodaovo.github.io/2023/10/13/test/#ruststart
 
 
