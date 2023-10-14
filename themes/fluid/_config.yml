@@ -952,8 +952,10 @@ about:
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/NanodaOvO", tip: "我的GitHub个人主页" }
-    - { class: "iconfont icon-qq-fill", qrcode: "/img/user/qq.png", }
+    - { class: "iconfont icon-qq-fill", qrcode: "/img/user/qq.png" }
     - { class: "iconfont icon-bilibili-fill", link: "https://space.bilibili.com/287889648", tip: "我的bilibili个人主页" }
+    - { class: "iconfont icon-baidu-fill", link: "https://tieba.baidu.com/home/main?id=tb.1.ddd26d9.KnxSl6dg61YHydPK_OtnMA?t=1693145120&fr=index", tip: "我的贴吧个人主页" }
+    - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/nanodaovo", tip: "我的知乎个人主页" }
     - { class: "iconfont icon-steam", link: "https://steamcommunity.com/profiles/76561198798036771/", tip: "我的steam个人主页" }
     - { class: "iconfont icon-discord-fill", link: "https://discord.gg/AMNtWeuapn", tip: "常州大学笨比channel" }
     - { class: "iconfont icon-twitter-fill", link: "https://twitter.com/nanodaovo001", tip: "我的twitter个人主页" }
@@ -963,7 +965,9 @@ about:
     - { class: "iconfont icon-reddit-fill", link: "https://www.reddit.com/user/NanodaOvO", tip: "我的reddit个人主页" }
     - { class: "iconfont icon-pinterest-fill", link: "https://pin.it/5gs4mPQ", tip: "我的pinterest个人主页" }
     - { class: "iconfont icon-medium-fill", link: "medium.com/@nanodaovo", tip: "我的medium个人主页" }
-    - { class: "iconfont icon-alipay-fill", qrcode: "/img/user/alipay.png", }
+    - { class: "iconfont icon-facebook-fill", link: "https://www.facebook.com/profile.php?id=100053315633316", tip: "我的facebook个人主页" }
+    - { class: "iconfont icon-alipay-fill", qrcode: "/img/user/alipay.png" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "/img/user/weixin.png" }
 
 
 #---------------------------
