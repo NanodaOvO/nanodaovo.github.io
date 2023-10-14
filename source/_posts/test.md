@@ -1,7 +1,9 @@
 ---
 title: markdown语法测试
-date: 2023-10-14 12:00:00
-tags: testing
+date: 2023-10-12 12:00:00
+updated: 2023-10-14 20:00:00
+categories: test
+tags: 
 ---
 
 先把正版教程放在前面<https://markdown.com.cn/basic-syntax/>
