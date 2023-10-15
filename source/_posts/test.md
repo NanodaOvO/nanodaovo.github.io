@@ -4,8 +4,8 @@ date: 2023-10-12 12:00:00
 updated: 2023-10-15 16:00:00
 categories: test
 tags: 
-index_img: https://pixiv.cat/84803644.jpg
-banner_img: https://pixiv.cat/84803644.jpg
+index_img: https://pixiv.re/84803644.jpg
+banner_img: https://pixiv.re/84803644.jpg
 ---
 
 先把正版教程放在前面 [markdown官方教程](https://markdown.com.cn/basic-syntax)
@@ -155,7 +155,19 @@ _ _  _   _
 - [使用Typora添加数学公式](https://blog.csdn.net/mingzhuo_126/article/details/82722455)
 - [Typora数学公式汇总（Markdown）](https://zhuanlan.zhihu.com/p/261750408)
 
-### 实例演示
+### 实例测试
+
+```
+$$
+A^m_n = n(n-1)(n-2)(n-3)...(n-m+1) = \frac{n!}{(n-m)!}
+$$
+
+$$
+C^m_n = \frac{A^m_n}{A^m_m} = \frac{n(n-1)(n-2)(n-3)...(n-m+1)}{m!} = \frac{n!}{m!(n-m)!}
+$$
+
+```
+
 $$
 A^m_n = n(n-1)(n-2)(n-3)...(n-m+1) = \frac{n!}{(n-m)!}
 $$
@@ -180,15 +192,22 @@ $$
 
 [Markdown 图片-菜鸟教程](https://www.runoob.com/markdown/md-image.html)
 
-我们先来试试插入站内图片，在hexo博客中插入站内图片会比较麻烦，请参考 [Hexo Fluid 用户手册](https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9%E5%9B%BE%E7%89%87)
+我们先来试试插入站内图片，在hexo博客中插入站内图片会比较麻烦，具体请参考 [Hexo Fluid 用户手册](https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9%E5%9B%BE%E7%89%87)
 
-![Koishi](/img/109561822_p1_master1200.jpg "恋恋可爱")
+`![local](/img/109561822_p1.jpg "恋恋可爱")`
 
-让我们再来试试插入站外图片,站外图片通常要比站内图片方便得多，我也建议引用站外图片
+![local](/img/109561822_p1.jpg "恋恋可爱")
 
-如果你想插入pixiv上的插图，我强烈建议使用 [pixiv图片代理](https://pixiv.re/) ,只需要输入 Pixiv ID 或 pixiv 作品网址就可以快速生成markdown代码了，不仅方便还省去了图片加载不出的麻烦，下面这张图片便使用在 [pixiv图片代理](https://pixiv.re/) 获取的markdown代码。
+让我们再来试试插入站外图片
 
-![Pixiv.Cat](https://pixiv.cat/89658155.jpg "响爷可爱")
+如果你想插入pixiv上的插图，可以使用 [pixiv图片代理](https://pixiv.re/) ,只需要输入 Pixiv ID 或 pixiv 作品网址就可以快速生成markdown代码了，不仅方便还省去了图片加载不出的麻烦，下面这张图片的链接便是从 [pixiv图片代理](https://pixiv.re/) 获取的markdown代码修改而成。
+
+>记得将所得链接（例：https://pixiv.cat/11111111.jpg）中的 .cat**修改为.re**!!! 
+>.cat结尾的域名被污染国内无法正常访问，图片将不能正常在国内网络下显示
+
+`![pixiv.re](https://pixiv.re/89658155.jpg "响爷可爱")`
+
+![pixiv.re](https://pixiv.re/89658155.jpg "响爷可爱")
 
 下面那张图片则是用Base64编码存储的，天哪，她的源代码简直是地狱绘图=͟͟͞͞(꒪ᗜ꒪ ‧̣̥̇没什么必要还是别用这种方法了
 
