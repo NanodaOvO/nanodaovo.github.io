@@ -180,7 +180,7 @@ $$
 
 [Markdown 图片-菜鸟教程](https://www.runoob.com/markdown/md-image.html)
 
-我们先来试试插入站内图片
+我们先来试试插入站内图片，在hexo博客中插入站内图片会比较麻烦，请参考 [Hexo Fluid 用户手册](https://hexo.fluid-dev.com/docs/guide/#%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9%E5%9B%BE%E7%89%87)
 
 ![Koishi](/img/109561822_p1_master1200.jpg "恋恋可爱")
 
