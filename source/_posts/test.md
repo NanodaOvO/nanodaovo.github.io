@@ -166,7 +166,7 @@ $$
 
 ## 在markdown中添加emoji
 
->你知道吗，使用 [Typora](https://www.typora.io/) 时你可以直接向正文 中添加emoji，所以快去用 [Typora](https://www.typora.io/) 吧。——沃兹基硕德v
+>你知道吗，使用 [Typora](https://www.typora.io/) 时你可以直接向正文 中添加emoji，所以快去用 [Typora](https://www.typora.io/) 吧。——沃兹基硕德
 
 好吧😂其实只要使用微软自带的输入法的就你就可以添加emoji了😍我来教你😝先切换到微软输入法，随便按一个字母，悬浮的备选栏这时候应该已经跳出来了，把你的视线往右移，按一下倒数第二个键，好了，现在你可以在markdown中输入emoji了😊
 
@@ -180,7 +180,7 @@ $$
 
 [Markdown 图片-菜鸟教程](https://www.runoob.com/markdown/md-image.html)
 
-我们先来试试插入站内图片，这张图片已经存储在了我的博客的GitHub仓库内，可以直接引用
+我们先来试试插入站内图片
 
 ![Koishi](/source/img/109561822_p1_master1200.jpg "恋恋可爱")
 
