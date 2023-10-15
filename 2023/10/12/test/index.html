@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3k 字
+          3.4k 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          25 分钟
+          29 分钟
         
       </span>
     
@@ -295,11 +295,33 @@
 <p>VScode已经默认集成markdown文档编辑插件，无需额外安装插件。如果你选择VScode作为你的markdown编辑器，请先记住这套快捷键：<code>Ctrl+K V</code> ，即先按 <code>Ctrl+K</code> ，然后放掉，紧接着再按 <code>V</code>，可以调出实时预览框，这能为你节省不少精力。</p>
 <p><a target="_blank" rel="noopener" href="https://www.typora.io/" title="即时渲染，简洁快捷的markdown编辑器">安装Typora</a></p>
 <p>Typora是一款界面清新简洁的md编辑器，售价15$，若你没有能力购买正版，请下载 <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1gH7LD5FELf-jpb49UxYcwQ?pwd=a3zi">学习版文件</a>，直接将下载得到的.dll文件粘贴至Typora文件夹目录即可。</p>
-<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="代码语法，强调语法の应用"><a href="#代码语法，强调语法の应用" class="headerlink" title="代码语法，强调语法の应用"></a>代码语法，强调语法の应用</h2><p>如果我们需要强调什么，那么在需要强调的文字前面和后面分表加上<code>**</code>就可以了哦<br>例：我喜欢玩<strong>原神</strong></p>
-<p>我们可以用反引号😫,对就是那<br>个波浪线下面<br>的小玩意😖，你懂<br>的，来框住这<br>些可爱的<br>小字母们<code>chkdsk</code><br>它们真可爱😍，不是么😌<br>如果你不喜欢也没事哦天哪<br>我的上帝我已经等不及要看看这美<br>丽的围栏代码块了🤗</p>
+<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="代码语法，强调语法の应用"><a href="#代码语法，强调语法の应用" class="headerlink" title="代码语法，强调语法の应用"></a>代码语法，强调语法の应用</h2><p>如果我们需要强调什么，那么在需要强调的文字前面和后面分表加上<code>**</code>就可以了哦</p>
+<p>例：<code>小明喜欢玩**原神**</code></p>
+<p>小明喜欢玩 <strong>原神</strong> </p>
+<p>如果我们想划掉一些词语或者单词，只要在需要划掉的文字前面和后面分表加上<code>~~</code>就可以了</p>
+<p>例：<code>小明喜欢玩 ~~原神~~ 星穹铁道</code></p>
+<p>小明喜欢玩 <del>原神</del> 星穹铁道</p>
+<p>我们还可以用反引号😫,对就是那个波浪线下面的小玩意😖，你懂的，来框住这些可爱的小字母们</p>
+<p><code>chkdsk</code></p>
+<p>它们真<del>可爱</del>😍，不是么😌如果你不喜欢也没事哦天哪我的上帝我已经等不及要看看这美丽的围栏代码块了🤗</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c">include &lt;stdio.h&gt;<br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello world\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h2 id="列表语法の运用"><a href="#列表语法の运用" class="headerlink" title="列表语法の运用"></a>列表语法の运用</h2><ul>
+<h2 id="列表语法の运用"><a href="#列表语法の运用" class="headerlink" title="列表语法の运用"></a>列表语法の运用</h2><blockquote>
+<p>要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。——markdown官方教程</p>
+</blockquote>
+<p>别忘了在<strong>英文句点</strong> <code>.</code> 后面加上一个空格！！！</p>
+<p>有序列表</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 巴拉巴拉<br><span class="hljs-bullet">2.</span> 咕叽咕叽<br><span class="hljs-bullet">3.</span> 哔哩哔哩<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>要创建无序列表，请在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。缩进一个或多个列表项可创建嵌套列表。——markdown官方教程</p>
+</blockquote>
+<p>也别忘了在破折号、星号或加号后面加上一个空格！！！</p>
+<p>无序列表</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">- </span>东方星莲船<br><span class="hljs-bullet">- </span>东方红魔乡<br><span class="hljs-bullet">- </span>东方辉针城<br></code></pre></td></tr></table></figure>
+
+<p>下面是实例测试：</p>
+<ul>
 <li><h3 id="脂质"><a href="#脂质" class="headerlink" title="脂质"></a>脂质</h3><ol>
 <li>脂肪:细胞内良好的储能物质；是一种很好的绝热体，皮下的脂肪层起到保温作用；分布在内脏周围的脂肪具有缓冲和减压作用，保护内脏器官</li>
 <li>磷脂:构成细胞膜及多种细胞器膜的重要成分</li>
@@ -331,24 +353,27 @@
 </ul>
 </li>
 </ul>
-<h2 id="链接语法的应用"><a href="#链接语法的应用" class="headerlink" title="链接语法的应用"></a>链接语法的应用</h2><p>这是我的bilibili个人主页：<a target="_blank" rel="noopener" href="https://space.bilibili.com/287889648">NanodaOvO</a><br>这也是我的bilibili个人主页（记得悬停鼠标指针！）：<a target="_blank" rel="noopener" href="http://space.bilibili.com/287889648" title="这里住着一个废物">NanodaOvO</a><br>这还是我的bilibli个人主页：<a target="_blank" rel="noopener" href="http://space.bilibili.com/287889648">http://space.bilibili.com/287889648</a><br>让我们小小地强调一下）<br>这是我的bilibili个人主页：**<a target="_blank" rel="noopener" href="https://space.bilibili.com/287889648" title="这里住着一个废物">NanodaOvO</a>**<br>这也我的bilibili个人主页：<a target="_blank" rel="noopener" href="https://space.bilibili.com/287889648" title="这里住着一个废物"><code>NanodaOvO</code></a></p>
+<h2 id="链接语法的应用"><a href="#链接语法的应用" class="headerlink" title="链接语法的应用"></a>链接语法的应用</h2><p>这是我的bilibili个人主页：<a target="_blank" rel="noopener" href="https://space.bilibili.com/287889648">NanodaOvO</a><br>这也是我的bilibili个人主页（记得悬停鼠标指针！）：<a target="_blank" rel="noopener" href="http://space.bilibili.com/287889648" title="这里住着一个废物">NanodaOvO</a><br>这还是我的bilibli个人主页：<a target="_blank" rel="noopener" href="http://space.bilibili.com/287889648">http://space.bilibili.com/287889648</a><br>让我们小小地强调一下）<br>这是我的bilibili个人主页：<a target="_blank" rel="noopener" href="https://space.bilibili.com/287889648" title="这里住着一个废物"><strong>NanodaOvO</strong></a><br>这也我的bilibili个人主页：<a target="_blank" rel="noopener" href="https://space.bilibili.com/287889648" title="这里住着一个废物"><code>NanodaOvO</code></a></p>
 <p>嘿，我是说，你还没有安装<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VScode</a>吗？快去下载！</p>
 <h2 id="分隔符语法の应用"><a href="#分隔符语法の应用" class="headerlink" title="分隔符语法の应用"></a>分隔符语法の应用</h2><p>很不巧，如果你是一个狂热的奇特分隔符爱好者，那么这里或许不太适合你</p>
-<p>这是第一行，下面是我们亲爱的分隔符，3个以上的<code>*</code>就行了，加空格也可以</p>
+<p>这是第一行，下面是我们亲爱的分隔符，3个以上的 <code>*</code> 就行了，加空格也可以</p>
+<p><code>*     *      *</code></p>
 <hr>
-<p>哦不喜欢星号么，那我们用小横杠也可以哦，需要3个以上的<code>-</code>，加空格也可以</p>
+<p>哦不喜欢星号么，那我们用小横杠也可以哦，需要3个以上的 <code>-</code> ，加空格也可以</p>
+<p><code>---</code></p>
 <hr>
-<p>下划线也是一样，3个以上的<code>_</code></p>
+<p>下划线也是一样，3个以上的 <code>_</code></p>
+<p><code>_ _  _   _</code></p>
 <hr>
-<p>嘿，我的下划线到这就结束啦</p>
+<p>嘿，我的下划线到这就结束啦🤧</p>
 <h2 id="转义符语法の应用"><a href="#转义符语法の应用" class="headerlink" title="转义符语法の应用"></a>转义符语法の应用</h2><p>能当做转义符的符号太多了，建议直接阅读<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/escaping-characters.html" title="正版教程，童叟无欺">markdown官方教程</a></p>
 <p>我们只介绍一个<code>\</code>吧,<code>\</code>要紧挨着正文，不可以加空格，不然可能会出现一些问题。</p>
-<p>**强调**了吗？如来嘛；</p>
+<p>**强调**来了吗？如来嘛；</p>
 <p>他真\ <strong>强调</strong>了吗？真来了！</p>
 <h2 id="引用、换行、段落语法の的应用"><a href="#引用、换行、段落语法の的应用" class="headerlink" title="引用、换行、段落语法の的应用"></a>引用、换行、段落语法の的应用</h2><blockquote>
 <p>远看是只狗🐶，近看是只若沫郭🐒。——迅鲁</p>
 </blockquote>
-<p>是的只要空一行我们就可以开始下一段引用了😍，如果不空一行还会继续引用🥰，我觉得我们最好还是在每一段引用的前面和后面都空一行😘。<br>当然了在我们的正文需要分段&amp;换行的时候同样需要空一行。</p>
+<p>是的只要空一行我们就可以开始下一段引用了😍，如果不空一行还会继续引用🥰，我觉得我们最好还是在每一段引用的前面和后面都空一行😘。<br>当然了在我们的正文需要分段&amp;换行的时候同样需要空一行，具体情况具体讨论，不过多空几行总不会有问题，markdown会帮你处理恼人的排版问题的。</p>
 <blockquote>
 <p>创建段落，请使用空白行将一行或多行文本进行分隔。——markdown官方教程</p>
 </blockquote>
@@ -363,7 +388,7 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<p>哦闭嘴吧冰红茶，不然我就要用靴子👢狠狠踢你的屁股！😡</p>
+<p>哦闭嘴吧康师傅冰红茶，不然我就要用靴子👢狠狠踢你的屁股！😡</p>
 <h1 id="扩展语法"><a href="#扩展语法" class="headerlink" title="扩展语法"></a>扩展语法</h1><h2 id="围栏代码块语法の应用"><a href="#围栏代码块语法の应用" class="headerlink" title="围栏代码块语法の应用"></a>围栏代码块语法の应用</h2><p><a href="#%E4%BB%A3%E7%A0%81%E8%AF%AD%E6%B3%95%EF%BC%8C%E5%BC%BA%E8%B0%83%E8%AF%AD%E6%B3%95%E3%81%AE%E5%BA%94%E7%94%A8">参见上文</a></p>
 <h2 id="表格语法の应用"><a href="#表格语法の应用" class="headerlink" title="表格语法の应用"></a>表格语法の应用</h2><table>
 <thead>
