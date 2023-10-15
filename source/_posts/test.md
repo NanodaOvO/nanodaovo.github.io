@@ -172,8 +172,6 @@ $$
 
 或者，你直接随便找个emoji网站复制一下不就行了嘛♥: [EMOJIALL](https://www.emojiall.com/zh-hans)
 
-我们这是插入了一张站内图片嘛，看来是的
-
 ## 在markdown中添加图片
 
 老样子，先放教程，我才刚开始写markdown两天，你为什么要问我这个（
