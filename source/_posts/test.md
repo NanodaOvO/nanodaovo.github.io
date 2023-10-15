@@ -106,33 +106,65 @@ int main(){
     - 信息传递
 
 ## 链接语法的应用
+
+超链接标准格式：`<链接地址>`
+
+文本超链接标准格式：`[实际显示的文本信息](链接地址 "鼠标悬停时显示的信息")`
+
+这是我的bilibili个人主页：[NanodaOvO](https://space.bilibili.com/287889648)
+
+这也是我的bilibili个人主页（记得悬停鼠标指针！）：[NanodaOvO](http://space.bilibili.com/287889648 "这里住着一个废物")
+
+这还是我的bilibli个人主页：<http://space.bilibili.com/287889648>
+
+让我们小小地强调一下）
+
+这是我的bilibili个人主页：[**NanodaOvO**](https://space.bilibili.com/287889648 "这里住着一个废物")
+
+这也我的bilibili个人主页：[`NanodaOvO`](https://space.bilibili.com/287889648 "这里住着一个废物")
+
+```
 这是我的bilibili个人主页：[NanodaOvO](https://space.bilibili.com/287889648)
 这也是我的bilibili个人主页（记得悬停鼠标指针！）：[NanodaOvO](http://space.bilibili.com/287889648 "这里住着一个废物")
 这还是我的bilibli个人主页：<http://space.bilibili.com/287889648>
 让我们小小地强调一下）
 这是我的bilibili个人主页：[**NanodaOvO**](https://space.bilibili.com/287889648 "这里住着一个废物")
 这也我的bilibili个人主页：[`NanodaOvO`](https://space.bilibili.com/287889648 "这里住着一个废物")
+```
 
-嘿，我是说，你还没有安装[VScode](https://code.visualstudio.com/)吗？快去下载！
+嘿，我是说，都看到这了，你还没有安装[VScode](https://code.visualstudio.com/)吗？快去下载！
 
 ## 分隔符语法の应用
+
 很不巧，如果你是一个狂热的奇特分隔符爱好者，那么这里或许不太适合你
 
 这是第一行，下面是我们亲爱的分隔符，3个以上的 `*` 就行了，加空格也可以
 
-`*     *      *`
+```
+*     *      *
+```
+
+显示效果👇
 
 *     *      *
 
 哦不喜欢星号么，那我们用小横杠也可以哦，需要3个以上的 `-` ，加空格也可以
 
-`---`
+```
+---
+```
+
+显示效果👇
 
 ---
 
 下划线也是一样，3个以上的 `_`
 
-`_ _  _   _`
+```
+_ _  _   _
+```
+
+显示效果👇
 
 _ _  _   _
 
