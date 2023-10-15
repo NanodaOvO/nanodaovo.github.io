@@ -531,7 +531,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://pixiv.cat/105040587.jpg
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -885,7 +885,7 @@ giscus:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://pixiv.cat/104991012.jpg
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -896,7 +896,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://pixiv.cat/100947018.jpg
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -925,7 +925,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://pixiv.cat/99764972.jpg
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -942,7 +942,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://pixiv.cat/99579082.jpg
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/user/avatar.png
@@ -978,7 +978,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/default.png
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -989,7 +989,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -1003,7 +1003,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://pixiv.cat/98893962.jpg
+  banner_img: https://pixiv.cat/111114200.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
