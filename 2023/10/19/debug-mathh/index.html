@@ -16,16 +16,16 @@
   <meta name="author" content="NanodaOvO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’金色的太阳高高的挂在碧蓝的天空上，猫咪懒洋洋的卧在太阳充足的地方，贪婪的享受着温暖，时不时还舔一舔自己的爪子。  清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11 已知三角形的两条边及其夹角，求该三角形的面积 （$ S&#x3D; \frac{1}{2} a b sin \theta ，\theta  $">
+    <meta name="description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3 清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11 已知三角形的两条边及其夹角，求该三角形的面积 （$ S&#x3D; \frac{1}{2} a b sin \theta ，\theta  $ 为边 $a$ 和 $b$ 的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从编译问题到历史包袱 —— undefined reference to &#39;sin&#39;">
 <meta property="og:url" content="https://nanodaovo.github.io/2023/10/19/debug-mathh/index.html">
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
-<meta property="og:description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’金色的太阳高高的挂在碧蓝的天空上，猫咪懒洋洋的卧在太阳充足的地方，贪婪的享受着温暖，时不时还舔一舔自己的爪子。  清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11 已知三角形的两条边及其夹角，求该三角形的面积 （$ S&#x3D; \frac{1}{2} a b sin \theta ，\theta  $">
+<meta property="og:description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3 清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11 已知三角形的两条边及其夹角，求该三角形的面积 （$ S&#x3D; \frac{1}{2} a b sin \theta ，\theta  $ 为边 $a$ 和 $b$ 的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pixiv.re/104146853.jpg">
 <meta property="article:published_time" content="2023-10-19T22:25:00.000Z">
-<meta property="article:modified_time" content="2023-10-19T12:06:09.619Z">
+<meta property="article:modified_time" content="2023-10-19T12:20:05.161Z">
 <meta property="article:author" content="NanodaOvO">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://pixiv.re/104146853.jpg">
@@ -244,7 +244,7 @@
         
         
         
-          26 分钟
+          25 分钟
         
       </span>
     
@@ -287,20 +287,20 @@
             
               <div class="markdown-body">
                 
-                <h1 id="从编译问题到历史包袱-——-undefined-reference-to-‘sin’"><a href="#从编译问题到历史包袱-——-undefined-reference-to-‘sin’" class="headerlink" title="从编译问题到历史包袱 —— undefined reference to ‘sin’"></a>从编译问题到历史包袱 —— undefined reference to ‘sin’</h1><p>金色的太阳高高的挂在碧蓝的天空上，猫咪懒洋洋的卧在太阳充足的地方，贪婪的享受着温暖，时不时还舔一舔自己的爪子。</p>
-<blockquote>
+                <h1 id="从编译问题到历史包袱-——-undefined-reference-to-‘sin’"><a href="#从编译问题到历史包袱-——-undefined-reference-to-‘sin’" class="headerlink" title="从编译问题到历史包袱 —— undefined reference to ‘sin’"></a>从编译问题到历史包袱 —— undefined reference to ‘sin’</h1><p>开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3</p>
 <p>清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11</p>
 <p>已知三角形的两条边及其夹角，求该三角形的面积 （$ S= \frac{1}{2} a b sin \theta ，\theta  $ 为边 $a$ 和 $b$ 的夹角）</p>
-</blockquote>
 <p>书上提供了一种简单易懂的计算方法，省略了让程序判断任意两边之和是否大于第三边的步骤，判断输入数据是否能组成三角形的过程全由输入者完成。</p>
+<blockquote>
 <p>当然也可以用海伦公式：$S = \sqrt {s(s-a)(s-b)(s-c)} ，s = \frac{a+b+c}{2}  ，s$ 为半周长。</p>
+</blockquote>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;math.h&gt;</span></span><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-keyword">float</span> a,b,c,s;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%f%f%f&quot;</span>,&amp;a,&amp;b,&amp;c);<br>    s = <span class="hljs-number">1.0</span> / <span class="hljs-number">2</span> * a * b * <span class="hljs-built_in">sin</span>(<span class="hljs-number">3.14</span> / <span class="hljs-number">180</span> * c);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%.2f\n&quot;</span>,s);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>但是当我把代码一字不差地输入之后，却没有生成可执行文件，工作区也没有检测到语法错误。无论用的是哪种计算方法，似乎只要 include 了 math.h ，编译便会诡异地中止，</p>
-<p>VScode 终端是这样输出的：</p>
+<p>意外的是，这段简单的代码并不能成功编译成可执行文件，无论我们用的是哪种方法来计算三角形的面积，只要在开头引入了 math.h，编译过程便无法完成。</p>
+<p>当我在 VScode 内使用 gcc 进行调试时，终端的输出是这样的：</p>
 <figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">正在启动生成...<br>/usr/bin/gcc -fdiagnostics-color=always -g <span class="hljs-string">&quot;/workshop/code-reproduction/2-11 三角函数.c&quot;</span> -o <span class="hljs-string">&quot;/workshop/code-reproduction/2-11 三角函数&quot;</span><br>/usr/bin/ld: /tmp/ccfgMBr3.o: <span class="hljs-keyword">in</span> <span class="hljs-keyword">function</span> `main<span class="hljs-comment">&#x27;:</span><br>/workshop/code-reproduction/<span class="hljs-number">2</span>-<span class="hljs-number">11</span> 三角函数.c:<span class="hljs-number">8</span>: undefined reference <span class="hljs-keyword">to</span> `sin<span class="hljs-comment">&#x27;</span><br><span class="hljs-symbol">collect2:</span> <span class="hljs-keyword">error</span>: ld returned <span class="hljs-number">1</span> <span class="hljs-keyword">exit</span> status<br><br>生成已完成，但出现错误。<br><br> *  终端进程启动失败(退出代码: -<span class="hljs-number">1</span>)。 <br> *  终端将被任务重用，按任意键关闭。 <br></code></pre></td></tr></table></figure>
 
-<p>虽然一眼看上去字很多，但其中大部分都是目标文件的名称和路径这些无用信息，提取其中的关键信息才是首要的；</p>
+<p>虽然一眼看上去字很多，但其中大部分都是目标文件的名称和路径这些无用信息，重要的提取其中的关键信息；</p>
 <figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">gcc -fdiagnostics-color=always -g <span class="hljs-string">&quot;test.c&quot;</span> -o <span class="hljs-string">&quot;test&quot;</span><br>ccfgMBr3.o: <span class="hljs-keyword">in</span> <span class="hljs-keyword">function</span> `main<span class="hljs-comment">&#x27;:</span><br>test.c:<span class="hljs-number">8</span>: undefined reference <span class="hljs-keyword">to</span> `sin<span class="hljs-comment">&#x27;</span><br><span class="hljs-symbol">collect2:</span> <span class="hljs-keyword">error</span>: ld returned <span class="hljs-number">1</span> <span class="hljs-keyword">exit</span> status<br></code></pre></td></tr></table></figure>
 
 <ul>
@@ -317,8 +317,7 @@
 <p>在c语言面世的那个年代，浮点数计算(FPU)还不是标配，浮点计算代价高昂，在当时如果想使用数学计算, 需要CPU通过整数计算来模拟, 这种情况下计算效率非常低, 很多程序在编写的时候都会尽量避免使用浮点。不同的数学计算具有不同的取舍, 比如我希望计算要快，可以牺牲精确度，或者我希望足够精确, 慢点无所谓。如此可有可无的情况下也就不必将设计浮点运算的数学库作为标准库，所以也就不会默认链接数学库了。</p>
 <p>当现代硬件性能突飞猛进地发展、浮点计算已不再困难时，已经没有什么必要要求编译器默认数学库了。有需要的人仍然可以会手动去链接它，对于那些用不到它的人，它还是一个不怎么用的到的库文件，毕竟现在方便进行数学计算的高级语言琳琅满目，谁会去用c语言算一个三角函数值呢？</p>
 <p>从一个小小的编译问题开始，沿着一点一滴的线索，一硅一步地寻找，本以为能走出黑暗，最终迎接我的却是c语言家族的又一个历史包袱。c或许就是这样一门语言，缝缝补补，令人乏味。</p>
-<h2 id="Final-Solution"><a href="#Final-Solution" class="headerlink" title="Final Solution"></a>Final Solution</h2><p>开发环境：WSL＋GCC＋VScode，Linux版本是 Ubuntu 22.04.3</p>
-<p>问题：使用 gcc 对引入 &lt;math.h&gt; 的 .c文件编译时出现 undefined reference to ‘sin’ 报错，编译过程中止</p>
+<h2 id="Final-Solution"><a href="#Final-Solution" class="headerlink" title="Final Solution"></a>Final Solution</h2><p>问题：使用 gcc 对引入 &lt;math.h&gt; 的 .c文件编译时出现 undefined reference to ‘sin’ 报错，编译过程中止</p>
 <p>打开源文件目录下的 .vscode 文件夹，打开 tasks.json ，在第10行和第11间额外添加一行，内容为 <code>&quot;-lm&quot;,</code> ，其缩进与第10行和原第11行长度一致。效果如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">上略<br>                <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;file&#125;</span>&quot;</span>,<br>                <span class="hljs-string">&quot;-lm&quot;</span>,<br>                <span class="hljs-string">&quot;-o&quot;</span>,<br>下略<br></code></pre></td></tr></table></figure>
 
