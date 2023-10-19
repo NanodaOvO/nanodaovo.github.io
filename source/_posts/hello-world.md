@@ -2,7 +2,7 @@
 title: Hello world
 date: 2023-05-21 12:11:00
 updated: 2023-10-12 11:45:14
-categories: test
+categories: Test
 tags: 
 index_img: https://pixiv.re/109978297.jpg
 banner_img: https://pixiv.re/109978297.jpg
