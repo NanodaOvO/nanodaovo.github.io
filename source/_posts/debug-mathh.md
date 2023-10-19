@@ -9,9 +9,13 @@ banner_img: https://pixiv.re/104146853.jpg
 
 # 从编译问题到历史包袱 —— undefined reference to 'sin'
 
-开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3
+- 开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3
 
-清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11
+
+- 问题：使用 gcc 对引入 <math.h> 的 .c文件编译时出现 undefined reference to 'sin' 报错，编译过程中止
+
+**原题如下**
+
 
 已知三角形的两条边及其夹角，求该三角形的面积 （$ S= \frac{1}{2} a b sin \theta ，\theta  $ 为边 $a$ 和 $b$ 的夹角）
 
@@ -77,9 +81,7 @@ collect2: error: ld returned 1 exit status
 
 从一个小小的编译问题开始，沿着一点一滴的线索，一硅一步地寻找，本以为能走出黑暗，最终迎接我的却是c语言家族的又一个历史包袱。c或许就是这样一门语言，缝缝补补，令人乏味。
 
-## Final Solution
-
-问题：使用 gcc 对引入 <math.h> 的 .c文件编译时出现 undefined reference to 'sin' 报错，编译过程中止
+## 最终的解决方案
 
 打开源文件目录下的 .vscode 文件夹，打开 tasks.json ，在第10行和第11间额外添加一行，内容为 `"-lm",` ，其缩进与第10行和原第11行长度一致。效果如下
 
@@ -92,6 +94,8 @@ collect2: error: ld returned 1 exit status
 ```
 
 再次调试或运行的时候，就不会出现 undefined reference to 'sin' 的报错了。
+
+感谢 [H2Sxxa](https://github.com/H2Sxxa) 在 Debug 过程中对本人提供的帮助。
 
 ## 参考资料
 
@@ -114,5 +118,6 @@ collect2: error: ld returned 1 exit status
 - [gcc，clang在编译c程序时为什么不默认连接数学库？](https://www.zhihu.com/question/493038432)
 - [关于编译：为什么必须在C中链接数学库？](https://www.codenong.com/1033898/)
 
-感谢 [H2Sxxa](https://github.com/H2Sxxa) 在 Debug 过程中对本人提供的帮助。
+题目来源：清华大学出版社 C语言程序设计(第三版) P.60 例题 2-11
+
 
