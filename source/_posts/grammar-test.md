@@ -16,11 +16,18 @@ banner_img: https://pixiv.re/84803644.jpg
 
 [安装VScode](https://code.visualstudio.com/ "世界上最好的代码编辑器")
 
-VScode已经默认集成markdown文档编辑插件，无需额外安装插件。如果你选择VScode作为你的markdown编辑器，请先记住这套快捷键：`Ctrl+K V` ，即先按 `Ctrl+K` ，然后放掉，紧接着再按 `V`，可以调出实时预览框，这能为你节省不少精力。
+VScode 已经默认集成 markdown 文档编辑插件，无需额外安装插件
+
+使用前请先记住如下快捷键：
+
+打开 markdown 预览 `Ctrl+Shift+V` / 右键文件名 -> 打开预览
+
+在右侧打开 markdown 预览 `Ctrl+K  V` 
+
 
 [安装Typora](https://www.typora.io/ "即时渲染，简洁快捷的markdown编辑器")
 
-Typora是一款界面清新简洁的md编辑器，售价15$，若你没有能力购买正版，请下载 [学习版文件](https://pan.baidu.com/s/1gH7LD5FELf-jpb49UxYcwQ?pwd=a3zi)，直接将下载得到的.dll文件粘贴至Typora文件夹目录即可。
+Typora是一款界面清新简洁的md编辑器，售价15$，若你没有能力购买正版，请下载 [学习版文件](https://pan.baidu.com/s/1gH7LD5FELf-jpb49UxYcwQ?pwd=a3zi)，直接将下载得到的.dll文件粘贴至Typora文件夹目录即可
 
 # 基本语法
 
