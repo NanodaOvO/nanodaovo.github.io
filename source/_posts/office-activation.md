@@ -1,6 +1,7 @@
 ---
 title: Office 365 教育版白嫖 & 企业版KMS激活教程
-date: 2023-12-26 20:25:00
+date: 2023-11-27 20:25:00
+updated: 2023-12-26 22:00:00
 categories: Share & Misc
 tags: Office
 index_img: https://pixiv.re/71429940.jpg
