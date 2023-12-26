@@ -16,16 +16,16 @@
   <meta name="author" content="NanodaOvO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’ 开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3   问题：使用 gcc 对引入 math.h 的 .c文件编译时出现 undefined reference to &#39;sin&#39; 报错，编译过程中止  原题如下 已知三角形的两条边及其夹角，求该三角形的面积 （$">
+    <meta name="description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’ 开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3   问题：使用 gcc 对引入 math.h 的 .c文件编译时出现 &#96;&#96;undefined reference to ‘sin’&#96; 报错，编译过程中止  原题如下 已知三角形的两条边及其夹角，求该三角形的面积 （$ S&#x3D; \f">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从编译问题到历史包袱 —— undefined reference to &#39;sin&#39;">
 <meta property="og:url" content="https://nanodaovo.github.io/2023/10/19/debug-mathh/index.html">
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
-<meta property="og:description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’ 开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3   问题：使用 gcc 对引入 math.h 的 .c文件编译时出现 undefined reference to &#39;sin&#39; 报错，编译过程中止  原题如下 已知三角形的两条边及其夹角，求该三角形的面积 （$">
+<meta property="og:description" content="从编译问题到历史包袱 —— undefined reference to ‘sin’ 开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3   问题：使用 gcc 对引入 math.h 的 .c文件编译时出现 &#96;&#96;undefined reference to ‘sin’&#96; 报错，编译过程中止  原题如下 已知三角形的两条边及其夹角，求该三角形的面积 （$ S&#x3D; \f">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pixiv.re/104146853.jpg">
 <meta property="article:published_time" content="2023-10-19T22:25:00.000Z">
-<meta property="article:modified_time" content="2023-12-08T14:27:27.530Z">
+<meta property="article:modified_time" content="2023-12-26T13:56:50.849Z">
 <meta property="article:author" content="NanodaOvO">
 <meta property="article:tag" content="C GCC">
 <meta name="twitter:card" content="summary_large_image">
@@ -292,7 +292,7 @@
 <li>开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3</li>
 </ul>
 <ul>
-<li>问题：使用 gcc 对引入 <code>math.h</code> 的 .c文件编译时出现 <code>undefined reference to &#39;sin&#39;</code> 报错，编译过程中止</li>
+<li>问题：使用 gcc 对引入 <code>math.h</code> 的 .c文件编译时出现 ``undefined reference to ‘sin’` 报错，编译过程中止</li>
 </ul>
 <p><strong>原题如下</strong></p>
 <p>已知三角形的两条边及其夹角，求该三角形的面积 （$ S= \frac{1}{2} a b sin \theta ，\theta  $ 为边 $a$ 和 $b$ 的夹角）</p>
