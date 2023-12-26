@@ -12,7 +12,7 @@ banner_img: https://pixiv.re/104146853.jpg
 - 开发环境：WSL＋GCC＋VScode，Linux版本：Ubuntu 22.04.3
 
 
-- 问题：使用 gcc 对引入 `math.h` 的 .c文件编译时出现 ``undefined reference to 'sin'`` 报错，编译过程中止
+- 问题：使用 gcc 对引入 `math.h` 的 .c文件编译时出现 ``undefined reference to 'sin'` 报错，编译过程中止
 
 **原题如下**
 

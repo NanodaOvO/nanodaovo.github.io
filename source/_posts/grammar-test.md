@@ -27,7 +27,7 @@ VScode 已经默认集成 markdown 文档编辑插件，无需额外安装插件
 
 [安装Typora](https://www.typora.io/ "即时渲染，简洁快捷的markdown编辑器")
 
-Typora是一款界面清新简洁的md编辑器，售价15$，若你没有能力购买正版，请下载 [学习版文件](https://pan.baidu.com/s/1gH7LD5FELf-jpb49UxYcwQ?pwd=a3zi)，直接将下载得到的.dll文件粘贴至Typora文件夹目录即可
+Typora是一款界面清新简洁的md编辑器，售价15$，若你没有能力购买正版，请下载 [学习版文件](https://pan.baidu.com/s/1gH7LD5FELf-jpb49UxYcwQ?pwd=a3zi)，直接将下载得到的.dll文件粘贴至 Typora 文件夹目录即可
 
 # 基本语法
 
@@ -254,7 +254,7 @@ $$
 
 >你知道吗，使用 [Typora](https://www.typora.io/) 时你可以直接向正文 中添加emoji，所以快去用 [Typora](https://www.typora.io/) 吧。——沃兹基硕德
 
-好吧😂其实只要使用微软自带的输入法的就你就可以添加emoji了😍我来教你😝先切换到微软输入法，随便按一个字母，悬浮的备选栏这时候应该已经跳出来了，把你的视线往右移，按一下倒数第二个键，好了，现在你可以在markdown中输入emoji了😊
+好吧😂其实只要使用微软自带的输入法的就你就可以添加emoji了😍我来教你😝先切换到微软输入法，随便按一个字母，悬浮的备选栏这时候应该已经跳出来了，把你的视线往右移，按一下倒数第二个键，好了，现在你可以在 MarkDown 中输入emoji了😊
 
 或者，你直接随便找个emoji网站复制一下不就行了嘛♥: [EMOJIALL](https://www.emojiall.com/zh-hans)
 
@@ -262,7 +262,7 @@ $$
 
 老样子，先放教程，我才刚开始写markdown两天，你为什么要问我这个（
 
-[Markdown插入图片 详细例子(本地图片，网络图片，base64) Windows](https://blog.csdn.net/xapxxf/article/details/105133999)
+[Markdown 插入图片 详细例子(本地图片，网络图片，base64) Windows](https://blog.csdn.net/xapxxf/article/details/105133999)
 
 [Markdown 图片-菜鸟教程](https://www.runoob.com/markdown/md-image.html)
 
