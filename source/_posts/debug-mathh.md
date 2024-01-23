@@ -3,8 +3,9 @@ title: 从编译问题到历史包袱 —— undefined reference to 'sin'
 date: 2023-10-19 22:25:00
 categories: Development & Progarmming
 tags: C GCC
-index_img: https://pixiv.re/104146853.jpg
-banner_img: https://pixiv.re/104146853.jpg
+Front-matter: True
+index_img: https://pixiv.nl/104146853.jpg
+banner_img: https://pixiv.nl/104146853.jpg
 ---
 
 # 从编译问题到历史包袱 —— undefined reference to 'sin'
