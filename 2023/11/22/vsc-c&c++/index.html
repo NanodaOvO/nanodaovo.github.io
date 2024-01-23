@@ -16,24 +16,24 @@
   <meta name="author" content="NanodaOvO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Windows or WSL ( Windows Subsystem for Linux )在 Windows 上使用 VScode 进行 C 的开发主要有两种策略，一种是将编译器安装在 Windows系统中的 VSCode + MinGW 组合，另一种是将编译器安装在Windows Linux子系统 (也就是 WSL ) 中的 VSCode + WSL + GCC&amp;G++ 组合。 Vis">
+    <meta name="description" content="Windows or WSL ( Windows Subsystem for Linux )在Windows上使用VScode进行C的开发主要有两种策略，一种是将编译器安装在Windows系统中的 VSCode + MinGW 组合，另一种是将编译器安装在Windows Linux子系统 (也就是WSL) 中的 VSCode + WSL + GCC&amp;G++ 组合。 Visual Studi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VS Code 配置 C&amp;C++ 开发环境">
+<meta property="og:title" content="在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境">
 <meta property="og:url" content="https://nanodaovo.github.io/2023/11/22/vsc-c&c++/index.html">
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
-<meta property="og:description" content="Windows or WSL ( Windows Subsystem for Linux )在 Windows 上使用 VScode 进行 C 的开发主要有两种策略，一种是将编译器安装在 Windows系统中的 VSCode + MinGW 组合，另一种是将编译器安装在Windows Linux子系统 (也就是 WSL ) 中的 VSCode + WSL + GCC&amp;G++ 组合。 Vis">
+<meta property="og:description" content="Windows or WSL ( Windows Subsystem for Linux )在Windows上使用VScode进行C的开发主要有两种策略，一种是将编译器安装在Windows系统中的 VSCode + MinGW 组合，另一种是将编译器安装在Windows Linux子系统 (也就是WSL) 中的 VSCode + WSL + GCC&amp;G++ 组合。 Visual Studi">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pixiv.re/.jpg">
+<meta property="og:image" content="https://pixiv.nl/.jpg">
 <meta property="article:published_time" content="2023-11-22T22:25:00.000Z">
-<meta property="article:modified_time" content="2023-12-26T14:01:31.655Z">
+<meta property="article:modified_time" content="2024-01-23T03:13:12.231Z">
 <meta property="article:author" content="NanodaOvO">
 <meta property="article:tag" content="C VSCode Windows WSL GCC MinGW">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pixiv.re/.jpg">
+<meta name="twitter:image" content="https://pixiv.nl/.jpg">
   
   
   
-  <title>VS Code 配置 C&amp;C++ 开发环境 - NanodaOvO&#39;s Blog</title>
+  <title>在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境 - NanodaOvO&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,13 +205,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://pixiv.re/.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://pixiv.nl/.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="VS Code 配置 C&amp;C++ 开发环境"></span>
+            <span id="subtitle" data-typed-text="在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境"></span>
           
         </div>
 
@@ -234,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          551 字
+          590 字
         
       </span>
     
@@ -283,22 +283,24 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">VS Code 配置 C&amp;C++ 开发环境</h1>
+            <h1 style="display: none">在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Windows-or-WSL-Windows-Subsystem-for-Linux"><a href="#Windows-or-WSL-Windows-Subsystem-for-Linux" class="headerlink" title="Windows or WSL ( Windows Subsystem for Linux )"></a>Windows or WSL ( Windows Subsystem for Linux )</h1><p>在 Windows 上使用 VScode 进行 C 的开发主要有两种策略，一种是将编译器安装在 Windows系统中的 VSCode + MinGW 组合，另一种是将编译器安装在Windows Linux子系统 (也就是 WSL ) 中的 VSCode + WSL + GCC&amp;G++ 组合。</p>
-<h1 id="Visual-Studio-Code-的安装与初步配置"><a href="#Visual-Studio-Code-的安装与初步配置" class="headerlink" title="Visual Studio Code 的安装与初步配置"></a>Visual Studio Code 的安装与初步配置</h1><h2 id="安装-Visual-Studio-Code"><a href="#安装-Visual-Studio-Code" class="headerlink" title="安装 Visual Studio Code"></a>安装 Visual Studio Code</h2><p>首先你要做的第一件事应该是下载 VSCode</p>
-<p>使用浏览器搜索 <code>Visual Studio Code</code> ，或点击下方链接选择适合的版本进行下载，Windows 64位系统下载最左侧 Windows 大类下的 User Installer x64 即可；</p>
+                <h1 id="Windows-or-WSL-Windows-Subsystem-for-Linux"><a href="#Windows-or-WSL-Windows-Subsystem-for-Linux" class="headerlink" title="Windows or WSL ( Windows Subsystem for Linux )"></a>Windows or WSL ( Windows Subsystem for Linux )</h1><p>在Windows上使用VScode进行C的开发主要有两种策略，一种是将编译器安装在Windows系统中的 VSCode + MinGW 组合，另一种是将编译器安装在Windows Linux子系统 (也就是WSL) 中的 VSCode + WSL + GCC&amp;G++ 组合。</p>
+<h1 id="Visual-Studio-Code-的安装与初步配置"><a href="#Visual-Studio-Code-的安装与初步配置" class="headerlink" title="Visual Studio Code 的安装与初步配置"></a>Visual Studio Code 的安装与初步配置</h1><h2 id="安装-Visual-Studio-Code"><a href="#安装-Visual-Studio-Code" class="headerlink" title="安装 Visual Studio Code"></a>安装 Visual Studio Code</h2><p>首先你要做的第一件事应该是下载 <strong>VSCode</strong></p>
+<p>使用浏览器搜索<code>Visual Studio Code</code>，或点击下方链接选择适合的版本进行下载，Windows 64位系统下载最左侧 Windows 大类下的 <strong>User Installer x64</strong> 即可；</p>
 <p><a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">Download Visual Studio Code</a></p>
 <p><img src="https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/vsc-c&c++_1.png" srcset="/img/loading.gif" lazyload alt="github"></p>
 <p>安装时碰到这个界面建议全部勾选；</p>
 <p><img src="https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/vsc-c&c++_2.png" srcset="/img/loading.gif" lazyload alt="github"></p>
 <p>安装完毕建议重启电脑以确保环境变量成功添加。</p>
-<h2 id="设置简体中文"><a href="#设置简体中文" class="headerlink" title="设置简体中文"></a>设置简体中文</h2><p>初次进入 VSCode 时我们的界面是纯英文的，这时候在左侧的工具栏中找到<img src="/2023-11-22_3.png" srcset="/img/loading.gif" lazyload alt="local">按钮或直接输入 <code>Ctrl+Shift+X</code> 打开扩展安装页，在搜索栏输入 <code>chinese</code> ，选择下载量最高的简体中文包，在介绍页点击 <code>Install</code> 等待安装完成，重启就可以了。</p>
+<h2 id="设置简体中文"><a href="#设置简体中文" class="headerlink" title="设置简体中文"></a>设置简体中文</h2><p>初次进入VSCode时我们的界面是纯英文的，这时候在左侧的工具栏中找到<img src="/2023-11-22_3.png" srcset="/img/loading.gif" lazyload alt="local">按钮或直接输入 <code>Ctrl+Shift+X</code> 打开扩展安装页，在搜索栏输入 <code>chinese</code> ，选择下载量最高的简体中文包，在介绍页点击<code>Install</code>，等待安装完成，重启VSCode就可以了。</p>
+<p>如果你的Vscode界面仍然是英语，</p>
 <h1 id="VSCode-MinGW"><a href="#VSCode-MinGW" class="headerlink" title="VSCode + MinGW"></a>VSCode + MinGW</h1><p>我们首先来讲步骤相对较少的 VSCode + MinGW 组合。</p>
-<h2 id="安装-MinGW"><a href="#安装-MinGW" class="headerlink" title="安装 MinGW"></a>安装 MinGW</h2>
+<h2 id="安装-MinGW"><a href="#安装-MinGW" class="headerlink" title="安装 MinGW"></a>安装 MinGW</h2><p>访问 MinGW 的 Github</p>
+
                 
               </div>
             
@@ -343,7 +345,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>VS Code 配置 C&amp;C++ 开发环境</div>
+      <div>在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境</div>
       <div>https://nanodaovo.github.io/2023/11/22/vsc-c&amp;c++/</div>
     </div>
     <div class="license-meta">
@@ -465,12 +467,6 @@
 
 
   
-
-
-  
-  
-
-
 
 
 
@@ -664,49 +660,6 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
