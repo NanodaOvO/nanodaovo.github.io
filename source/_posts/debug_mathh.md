@@ -82,7 +82,7 @@ collect2: error: ld returned 1 exit status
 
 从一个小小的编译问题开始，沿着一点一滴的线索，一硅一步地寻找，本以为能走出黑暗，最终迎接我的却是C语言家族的又一个历史包袱。C或许就是这样一门语言，缝缝补补，令人乏味。
 
-## 最终的解决方案
+## 解决方案
 
 打开源文件目录下的 `.vscode` 文件夹，打开 `tasks.json` ，在第10行和第11间额外添加一行，内容为 `"-lm",` ，其缩进与第10行和原第11行长度一致。效果如下
 
@@ -95,6 +95,18 @@ collect2: error: ld returned 1 exit status
 ```
 
 再次调试或运行的时候，就不会出现 ``undefined reference to 'sin'`` 的报错了。
+
+## 使用 Code Runner 插件的解决方案
+
+插件列表 -> Code Runner -> 管理（小齿轮） -> 扩展设置 -> Executor Map -> 在 settings.json 中编辑
+
+同样是加入 `"-lm"`"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && $dir$fileNameWithoutExt",k
+
+```
+上略
+            "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt -lm && $dir$fileNameWithoutExt",
+下略
+```
 
 感谢 [H2Sxxa](https://github.com/H2Sxxa) 在 Debug 过程中对本人提供的帮助。
 

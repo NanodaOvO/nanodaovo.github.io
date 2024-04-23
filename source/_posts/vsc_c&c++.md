@@ -72,6 +72,12 @@ g++ --version
 
 关于下文没有推荐到的插件，请看 [VSCode插件使用报告 (1) ](https://nanodaovo.github.io/1145/19/19/vsc_plug-in_usage_report_1/)。
 
+ - C/C++ & C/C++ Extension Pack
+   - 类似你玩游戏那种几乎所有mod的前置依赖
+ - Code Runner
+   - 更好的代码运行
+ - C/C++ Runner
+   - (或许)更好的代码调试？我没用过
 
 
 
