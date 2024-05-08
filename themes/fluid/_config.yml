@@ -868,7 +868,7 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo: nanodaovo.github.io
+  repo: NanodaOvO/nanodaovo.github.io
   repo-id: R_kgDOJlmrvg
   category: Announcements
   category-id: DIC_kwDOJlmrvs4CfNy-
