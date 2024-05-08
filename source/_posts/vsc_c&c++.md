@@ -4,7 +4,6 @@ date: 2023-11-22 22:25:00
 updated: 
 categories: Development & Progarmming
 tags: C VSCode Windows WSL GCC MinGW
-Front-matter: False
 index_img: https://pixiv.nl/.jpg
 banner_img: https://pixiv.nl/.jpg
 ---

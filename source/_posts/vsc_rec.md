@@ -4,7 +4,6 @@ date: 2023-11-21 23:10:00
 updated: 2024-4-14 12:10:00
 categories: Share & Misc
 tags: VSCode
-Front-matter: False
 index_img: https://pixiv.nl/82752479.jpg
 banner_img: https://pixiv.nl/82752479.jpg
 ---

@@ -4,7 +4,6 @@ date: 1919-08-10
 updated: 
 categories: 
 tags: 
-Front-matter: False
 index_img: https://pixiv.nl/.jpg
 banner_img: https://pixiv.nl/.jpg
 ---
