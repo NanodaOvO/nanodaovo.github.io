@@ -516,7 +516,7 @@
     <div id="giscus" class="giscus"></div>
     <script type="text/javascript">
       Fluid.utils.loadComments('#giscus', function() {
-        var options = {"repo":"NanodaOvO/nanodaovo.github.io","repo-id":"R_kgDOJlmrvg","category":"Announcements","category-id":"DIC_kwDOJlmrvs4CfNy-","theme-light":"light_tritanopia","theme-dark":"dark_dimmed","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN"};
+        var options = {"repo":"NanodaOvO/nanodaovo.github.io","repo-id":"R_kgDOJlmrvg","category":"Announcements","category-id":"DIC_kwDOJlmrvs4CfNy-","theme-light":"light","theme-dark":"dark","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN"};
         var attributes = {};
         for (let option in options) {
           if (!option.startsWith('theme-')) {
@@ -524,8 +524,8 @@
             attributes[key] = options[option];
           }
         }
-        var light = 'light_tritanopia';
-        var dark = 'dark_dimmed';
+        var light = 'light';
+        var dark = 'dark';
         window.GiscusThemeLight = light;
         window.GiscusThemeDark = dark;
         attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
