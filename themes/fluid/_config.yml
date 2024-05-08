@@ -872,8 +872,8 @@ giscus:
   repo-id: R_kgDOJlmrvg
   category: Announcements
   category-id: DIC_kwDOJlmrvs4CfNy-
-  theme-light: light_tritanopia
-  theme-dark: dark_dimmed
+  theme-light: light
+  theme-dark: dark
   mapping: pathname
   reactions-enabled: 1
   emit-metadata: 0
