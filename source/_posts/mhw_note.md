@@ -1,11 +1,11 @@
 ---
 title: 怪物猎人-世界搓招表（自用）
-date: 2023-05-21 12:11:00
-updated: 2023-10-12 11:45:14
+date: 2024-05-27 22:00:00
+updated: 
 categories: Share & Misc
-tags: 
-index_img: 
-banner_img: 
+tags: Game
+index_img: https://pixiv.nl/.jpg
+banner_img: https://pixiv.nl/.jpg
 ---
 
 ## 虫棍
