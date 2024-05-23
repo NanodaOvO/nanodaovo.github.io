@@ -4,8 +4,8 @@ date: 2024-03-19 16:50:00
 updated: 
 categories: Share & Misc
 tags: Steam Background
-index_img: https://pixiv.nl/.jpg
-banner_img: https://pixiv.nl/.jpg
+index_img: https://pixiv.nl/104212779.jpg
+banner_img: https://pixiv.nl/104212779.jpg
 ---
 
 ### 前言
