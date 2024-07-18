@@ -1,30 +1,40 @@
 ---
-title: 在 Windows 上 使用 VS Code 配置 C&C++ 开发环境
+title: Noob C 其二：在 Windows 上 使用 VS Code 配置 C&C++ 开发环境
 date: 2023-11-22 22:25:00
 updated: 2024-05-23 19:03:00
 categories: Development & Progarmming
-tags: C VSCode Windows WSL GCC Clang MinGW
+tags: C Windows WSL GCC Clang VScode
 index_img: https://pixiv.nl/49360261.jpg
 banner_img: https://pixiv.nl/49360261.jpg
 ---
 
-# Windows or WSL ( Windows Subsystem for Linux )
+## 前言
 
-在 Win 上用 VScode 写 C 我推荐两种方案，一种是在 WSL 上操作，另一种就是直接把编译器装 Windows 上（MinGW）。
+本文是笔者面向纯小白的编程教程 Noob C 系列的第二章，主要讲解了如何使用编辑器 VS Code 配置C语言编程环境。如果你对编译器、编辑器这些概念还了解甚少，请先阅读第一章。
 
-## VSCode + WSL + GCC/Clang
+下面是教程全集链接：
 
-安装可能较为繁琐，但编程体验更好
+- [Noob C 其一：为什么我使用 Visual Studio Code](https://nanodaovo.github.io/2023/11/21/vsc_rec/)
+- Noob C 其二：在 Windows 上 使用 VS Code 配置 C&C++ 开发环境（本教程）
+- [Noob C 其三：使用 VS Code 开始编写 C&C++ 代码](https://nanodaovo.github.io/2024/05/23/vsc_c&c++_startcoding/)
+- [Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW](https://nanodaovo.github.io/2024/05/31/vsc_mingw)
 
-### 为什么选择 WSL
+## 为什么选择 WSL (Windows Subsystem for Linux)
 
-我觉得好用😎
+在 Win 上用 VS Code 写 C 推荐两种方案，一种是在 WSL 上操作，另一种就是直接把编译器装 Windows 上（MinGW）。
+Linux 平台的编程体验好于 Windows，无论是安装依赖还是进行构建之类的操作都很方便。
+
+如果你嫌安装 WSL 麻烦，那你就把我上面提到的的 Noob C 外传过一遍。
+
+## VS Code + WSL + GCC/Clang
+
+安装过程较为繁琐，请做好准备。
 
 ### 如何编译出文件在 Windows 上运行
 
-交叉编译
+交叉编译（即答）
 
-可以必应搜索教程或者直接看我的下文教程。
+可以自行搜索教程，或者直接看我的 [Noob C 其三：使用 VS Code 在 WSL 上开始编写 C&C++ 代码](https://nanodaovo.github.io/2024/05/23/vsc_c&c++_startcoding/) 中的交叉编译部分。
 
 ### 启用 WSL 和虚拟化
 
@@ -132,7 +142,7 @@ Clang（LLVM's C Language Family Frontend）：运行速度更快，占用内存
 
 #### GCC
 
-``` Linux Shell
+``` Shell
 sudo sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list  #切换阿里云镜像
 sudo apt update -y  #更新软件包清单
 sudo apt upgrade -y  #升级软件包
@@ -141,13 +151,13 @@ sudo apt-get install build-essential gdb clangd  #build-essential中包含gcc和
 
 验证安装
 
-``` Linux Shell
+``` Shell
 whereis gcc g++ gdb clangd
 ```
 
 #### Clang
 
-``` Linux Shell
+``` Shell
 sudo sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list  #切换阿里云镜像
 sudo apt update -y  #更新软件包清单
 sudo apt upgrade -y  #升级软件包
@@ -155,36 +165,35 @@ sudo apt-get install clang clangd lldb cmake
 ```
 
 验证安装
-``` Linux Shell
+``` Shell
 whereis clang clangd lldb cmake
 ```
 
-### 安装 VSCode
+### 安装 VS Code
 
 [Download Visual Studio Code](https://code.visualstudio.com/download) ，选择适合自己电脑的版本，安装时碰到「选择附加任务」界面直接全部勾选，安装完毕建议重启电脑以确保环境变量成功添加。
 
->[为什么要添加环境变量？](https://zhuanlan.zhihu.com/p/547720085)
+> [为什么要添加环境变量？](https://zhuanlan.zhihu.com/p/547720085)
 
-### 安装 VSCode 插件
+### 安装 VS Code 插件
 
 请根据自身体验选择合适的插件：
 
  - Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code
-   - 英语废渣的福音，用英文界面更能锻炼英语能力哦
+   - 英语渣的福音，用英文界面更能锻炼英语能力哦
  - WSL
    - 提供对 WSL 的支持
  - C/C++ & C/C++ Extension Pack
-   - 可以生成 .vscode 目录的配置文件，使各种命令行工具可以在 VSCode 的图形化界面中使用，自身拥有基础的报错、跳转、代码补全功能
+   - 可以自动生成 task.json 并方便地使用调试，使各种命令行工具可以在 VS Code 的图形化界面中使用，自身拥有基础的报错、跳转、代码补全功能
    - 点击界面右上角的小三角可以看到「到运行 C/C++ 文件」和「调试 C/C++ 文件」的功能；可以帮助你快速生成配置文件以调试运行
  - clangd
    - 拥有强大的静态检查功能
-   - 安装过程中弹出 clangd Extension 和 C/C++ Extension 的 IntelliSense 冲突的时候请选择关闭 IntelliSense
+   - 弹出 clangd Extension 和 C/C++ Extension 的 IntelliSense 冲突的弹窗时候请选择关闭 IntelliSense
    - 插件不能独自完成代码分析，需要在 Linux 系统中安装 clangd 包，自动下载如果卡住了需要科学上网或是直接在终端中使用 `sudo apt-get install clangd` 命令，具体教程请阅读 [clangd官方文档](https://clangd.llvm.org/installation)
-   - Windows 下安装需要使用 MSYS2，较为繁琐，所以为了方便地使用 clangd 建议还是用 WSL 吧
  - Code Runner
    - 更好的代码运行
  - C/C++ Runner
-   - 更好的代码调试，不调试的可以略过
+   - 更好的代码调试
  - CodeLLDB
    - C/C++ Runner的前置依赖
    - 对 lldb 调试器提供支持
@@ -194,35 +203,5 @@ whereis clang clangd lldb cmake
    - 大一C语言基本上只涉及单文件编程，不怎么用的到，可以顺带装上
  - VSCodeSnap
    - 代码截图插件，比普通截图更美观，“我求求你们不要拍屏了”
-
-## VSCode + Windows + MinGW
-
-我们最后再来讲步骤相对较少的 VSCode + MinGW 组合，MinGW 的体验其实挺烂的，如果你只是想要 VSCode 的编程体验可以凑合凑合。
-
-VSCode和插件部分请参照上文，咕~
-### 安装 MinGW
-
-~~PVP~~大佬可以访问 [MinGW官网](https://www.mingw-w64.org/downloads) 选择适合你的版本，小白可以直接跟着我的步骤下：
-
- - 访问 https://github.com/niXman/mingw-builds-binaries/releases
- - 32位系统安装 i686-13.2.0-release-posix-dwarf-ucrt-rt_v11-rev0.7z
- - 64位系统安装 x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev0.7z
-
-文件名里的 13.2.0 是版本名，你下载更加新的版本也可以，截至我截稿的时候反正最新版还是 13.2.0 ；下载完安装包并解压后，把解压好的文件夹找个合适的地方放起来，别放在**桌面**或者**下载**里，那样你可能会随手删掉的。
-
-接下来是很重要的一步，添加名为 (PATH) 的环境变量，如果你想了解环境变量的作用，建议先阅读下文；
-
-### 添加环境变量
-
-在任务栏的搜索框直接搜，直接在屏幕下方任务栏的搜索框中输入 `path` ，在弹出的选项中就可以进入编辑环境变量页面。至于多记几种方法也没什么用，你只要知道环境变量很重要，想不起来的时候去bing搜一下就行了。
-
-在弹出的窗口中找到 **环境变量** 按钮，双击用户变量或是系统变量中的 `Path` 变量，选择新建变量，将你解压出来的文件夹中 `\bin` 文件夹的完整路径填写到文本框中并保存就可以了。你可以使用如下命令验证mingw是否成功添加了环境变量：
-
-``` PowerShell
-gcc --version
-g++ --version
-```
-
-如果没成功可以试试重启电脑哦咕
 
 
