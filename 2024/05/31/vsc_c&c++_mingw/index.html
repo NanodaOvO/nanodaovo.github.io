@@ -16,24 +16,24 @@
   <meta name="author" content="NanodaOvO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言本文是笔者面向纯小白的编程教程 Noob C 系列的第三章。许多新手在使用 VS Code 运行和调试代码的的时候都犯过难，吃过不少报错。本文会尽量简明地告诉你如何正确地进行调试和运行的操作，让你摆脱那个只会按 F5 的自己。 如果你还没有配置好C语言的编程环境，请先阅读教程的第二章。 下面是教程全集链接：  Noob C 其一：为什么我使用 Visual Studio Code Noob C">
+    <meta name="description" content="前言本文是笔者面向纯小白的编程教程 Noob C 系列的外传，关于如何配置 MinGW 环境的教学。其实本来这部分是和 WSL 一起讲的，结果越讲越混，感觉还是单独拿出来好了。 下面是教程全集链接：  Noob C 其一：为什么我使用 Visual Studio Code Noob C 其二：在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境 Noob C 其三：使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码">
-<meta property="og:url" content="https://nanodaovo.github.io/2024/05/23/vsc_c&c++_startcoding/index.html">
+<meta property="og:title" content="Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW">
+<meta property="og:url" content="https://nanodaovo.github.io/2024/05/31/vsc_c&c++_mingw/index.html">
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
-<meta property="og:description" content="前言本文是笔者面向纯小白的编程教程 Noob C 系列的第三章。许多新手在使用 VS Code 运行和调试代码的的时候都犯过难，吃过不少报错。本文会尽量简明地告诉你如何正确地进行调试和运行的操作，让你摆脱那个只会按 F5 的自己。 如果你还没有配置好C语言的编程环境，请先阅读教程的第二章。 下面是教程全集链接：  Noob C 其一：为什么我使用 Visual Studio Code Noob C">
+<meta property="og:description" content="前言本文是笔者面向纯小白的编程教程 Noob C 系列的外传，关于如何配置 MinGW 环境的教学。其实本来这部分是和 WSL 一起讲的，结果越讲越混，感觉还是单独拿出来好了。 下面是教程全集链接：  Noob C 其一：为什么我使用 Visual Studio Code Noob C 其二：在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境 Noob C 其三：使用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pixiv.nl/118435208.jpg">
-<meta property="article:published_time" content="2024-05-23T19:36:00.000Z">
+<meta property="og:image" content="https://pixiv.nl/.jpg">
+<meta property="article:published_time" content="2024-05-31T15:48:00.000Z">
 <meta property="article:modified_time" content="2024-07-18T12:15:30.233Z">
 <meta property="article:author" content="NanodaOvO">
-<meta property="article:tag" content="C Windows WSL GCC Clang VScode">
+<meta property="article:tag" content="C VScode MinGW">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pixiv.nl/118435208.jpg">
+<meta name="twitter:image" content="https://pixiv.nl/.jpg">
   
   
   
-  <title>Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码 - NanodaOvO&#39;s Blog</title>
+  <title>Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW - NanodaOvO&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,13 +205,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://pixiv.nl/118435208.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://pixiv.nl/.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码"></span>
+            <span id="subtitle" data-typed-text="Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW"></span>
           
         </div>
 
@@ -222,8 +222,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-05-23 19:36" pubdate>
-          2024年5月23日 晚上
+        <time datetime="2024-05-31 15:48" pubdate>
+          2024年5月31日 下午
         </time>
       </span>
     
@@ -234,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.4k 字
+          939 字
         
       </span>
     
@@ -245,7 +245,7 @@
         
         
         
-          29 分钟
+          8 分钟
         
       </span>
     
@@ -283,64 +283,34 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码</h1>
+            <h1 style="display: none">Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文是笔者面向纯小白的编程教程 Noob C 系列的第三章。许多新手在使用 VS Code 运行和调试代码的的时候都犯过难，吃过不少报错。本文会尽量简明地告诉你如何正确地进行调试和运行的操作，让你摆脱那个只会按 F5 的自己。</p>
-<p>如果你还没有配置好C语言的编程环境，请先阅读教程的第二章。</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文是笔者面向纯小白的编程教程 Noob C 系列的外传，关于如何配置 MinGW 环境的教学。其实本来这部分是和 WSL 一起讲的，结果越讲越混，感觉还是单独拿出来好了。</p>
 <p>下面是教程全集链接：</p>
 <ul>
 <li><a href="https://nanodaovo.github.io/2023/11/21/vsc_rec/">Noob C 其一：为什么我使用 Visual Studio Code</a></li>
 <li><a href="https://nanodaovo.github.io/2023/11/22/vsc_c&c++/">Noob C 其二：在 Windows 上 使用 VS Code 配置 C&amp;C++ 开发环境</a></li>
-<li>Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码（本教程）</li>
-<li><a href="https://nanodaovo.github.io/2024/05/31/vsc_mingw">Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW</a></li>
+<li><a href="https://nanodaovo.github.io/2024/05/23/vsc_c&c++_startcoding/">Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码</a></li>
+<li>Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW（本教程）</li>
 </ul>
-<h2 id="VS-Code-核心概念-——-工作区"><a href="#VS-Code-核心概念-——-工作区" class="headerlink" title="VS Code 核心概念 —— 工作区"></a>VS Code 核心概念 —— 工作区</h2><p>工作区是一个具有独立设置和文件列表的容器。通过创建工作区，我们可以用于存储和组织相关的项目文件，并在其中进行开发工作。在 VS Code 中，打开一个文件夹会默认创建一个工作区。一个工作区可以包含一个或多个文件夹，这些文件夹可以位于不同的路径下。工作区会记录打开的文件列表、插件扩展、用户设置等信息。</p>
-<p>以C语言为例，你前面装的 C/C++ 插件会为每个工作区生成一系列存储于 .vscode 目录中的配置文件（你也可以手动添加），具体功能我们下面会讲到，这些配置文件中的内容负责告诉 VS Code 调试、运行过程中每一步应该执行什么操作。所以，你应该确保每次编写C语言代码时使用的是同一个工作区，这样可以省去你多次配置的麻烦。</p>
-<h3 id="VS-Code-的-工作区-Workspace-和-Visual-Studio-的-项目-Project-的区别"><a href="#VS-Code-的-工作区-Workspace-和-Visual-Studio-的-项目-Project-的区别" class="headerlink" title="VS Code 的 工作区(Workspace) 和 Visual Studio 的 项目(Project) 的区别"></a>VS Code 的 工作区(Workspace) 和 Visual Studio 的 项目(Project) 的区别</h3><p>VS Code 中，工作区是指你打开的一个或多个文件的集合，这些文件可能属于同一个项目或不同的项目。工作区可以包含多个文件和文件夹，但它们并没有被组织成一个正式的项目结构。VS Code 的工作区更灵活，可以用于编辑任意类型的文件，不需要遵循特定的项目结构或配置。</p>
-<p>Visual Studio 的项目是一个更为结构化的项目，通常包含一组相关的文件和文件夹，这些文件和文件夹按照一定的规则组织，支持特定的编程语言和开发框架。一个项目可以包含源代码文件、资源文件、配置文件等，并且通常会有一个项目文件（如.csproj、.sln等），用于定义项目的结构和设置。</p>
-<p>如果你们的C语言老师让你们在使用 VS 时为每一个 .c 创建一个项目，那你在 VS Code 中就不需要这么做了！</p>
-<h2 id="基于指定工作区的-VS-Code-的基本操作"><a href="#基于指定工作区的-VS-Code-的基本操作" class="headerlink" title="基于指定工作区的 VS Code 的基本操作"></a>基于指定工作区的 VS Code 的基本操作</h2><p>在今后使用 VS Code 的过程中你可以自行探索 VS Code 的各种功能，养成自己的使用习惯，限于篇幅本文只在这里简短地介绍对于源代码 .c 文件最基础的管理方法。</p>
-<p>打开 Windows 资源管理器，找到左侧目录中的「Linux」，选择你要用到 Linux 系统，在 <code>\root</code> 目录下新建一个文件夹，使用英文和数字命名，为了叙述方便，我先将其命名为 <code>workshop</code>。在 VS Code 界面左上角「文件」选项下选择打开文件夹，在弹出的地址栏中输入 <code>workshop</code> 的路径。鼠标光标移到左侧 VS Code 资源管理器栏时，右上角会显示四个小图标，第一个就是生成文件（也可以在空白处右键生成），重命名该文件为 <code>test.c</code>（没有资源管理器界面的鼠标左键点一下左侧一排按钮中的第一个就行了）。打开 <code>test.c</code> 随便输入一段代码：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;stdio.h&quot;</span></span><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;hello world\n&quot;</span>);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p><code>Ctrl + S</code> 保存。我知道你已经等不及按 F5 了，<del>但是你先别急</del>你先看一下 F5 是什么功能。鼠标单击 VS Code 顶栏的「运行」就可以找到 F5 的功能：调试，进一步说，是根据你的默认配置进行调试。这里我们先抛开调试，先来试试编译运行功能。</p>
-<h2 id="如何运行C语言代码"><a href="#如何运行C语言代码" class="headerlink" title="如何运行C语言代码"></a>如何运行C语言代码</h2><h3 id="在终端中输入指令编译运行（兼命令行教学）"><a href="#在终端中输入指令编译运行（兼命令行教学）" class="headerlink" title="在终端中输入指令编译运行（兼命令行教学）"></a>在终端中输入指令编译运行（兼命令行教学）</h3><p>以上面我们提到的 test.c 文件为例，在 VS Code 顶栏的「查看」栏中找到终端并打开，在终端中输入如下 Shell 命令，若成功在终端输出了 hello world 则为成功。</p>
-<p>GCC 编译器输入：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Shell">cd &quot;/root/test/&quot; &amp;&amp; gcc test.c -o test -lm &amp;&amp; &quot;/root/test/&quot;test<br></code></pre></td></tr></table></figure>
-
-<p>这行指令的含义是：</p>
-<ol>
-<li>我们发现 VS Code 的终端是在默认的 <code>\root</code> 目录下打开的，所以我们先使用 <code>cd</code> 命令切换到当前 .c 文件所在的路径；</li>
-<li>然后，我们使用 GCC 编译器的命令，将 test.c 文件编译为可执行文件，其中 <code>-lm</code> 的作用是链接数学库，这么做原因可以看我的 <a href="https://nanodaovo.github.io/2023/10/19/debug_mathh/">从编译问题到历史包袱 —— undefined reference to ‘sin’</a></li>
-<li>最后再直接运行可执行文件 test，在终端输出 hello world</li>
-</ol>
-<p>Clang 编译器输入：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Shell">cd &quot;/root/test/&quot; &amp;&amp; clang test.c -o test &amp;&amp; &quot;/root/test/&quot;test<br></code></pre></td></tr></table></figure>
-
-<p>当然我们在 Windows Terminal 中打开 Linux 终端的效果也是一样的，Windows Terminal 是 Win11 系统就自带的终端程序，右键底边菜单栏徽标 -&gt; 终端/终端管理员，在打开 PowerShell 的过程中就打开了 Windows Terminal。可以直接在 PowerShell 中输入 <code>&lt;系统名&gt;</code>，比如我安装的是 Ubuntu 就输入 <code>ubuntu</code> ，就可以进入 Linux 的 Shell 了；在 Windows Terminal 的标签栏上的下拉栏选择 Ubuntu 也可以直接打开一个新的 Linux Shell 界面，进入 Shell 后就可以输入上面的指令编译运行文件了。</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jplatformx/p/4366278.html">Linux下的终端和shell概念</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell">What’s the difference between a console, a terminal, and a shell?</a></p>
-</blockquote>
-<p>限于篇幅我不可能列出所有的 Linux 和 Windows 命令，感兴趣的可以自行查找资料学习。</p>
-<h3 id="使用-Code-Runner-插件进行编译运行（兼配置插件设置教学）"><a href="#使用-Code-Runner-插件进行编译运行（兼配置插件设置教学）" class="headerlink" title="使用 Code Runner 插件进行编译运行（兼配置插件设置教学）"></a>使用 Code Runner 插件进行编译运行（兼配置插件设置教学）</h3><p>在界面右上角可以找到一个小三角形状的运行键，点击旁边的下拉栏，选择「 Run Code (Ctrl+Alt+N) 」就可以使用 Code Runner 快速地编译运行了。观察 VS Code 工作台的输出我们就可以知道 Code Runner 具体执行了什么命令。Code Runner的默认C语言编译器是 GCC，如果我们想要使用 Clang 或者自定义编译运行过程中的指令（比如链接数学库），就需要找到这个插件配置文件的所在。</p>
+<h2 id="VS-Code-Windows-MinGW"><a href="#VS-Code-Windows-MinGW" class="headerlink" title="VS Code + Windows + MinGW"></a>VS Code + Windows + MinGW</h2><p>MinGW 的体验其实挺烂的，如果你只是想要 VS Code 的编程体验可以凑合凑合。</p>
+<p>VS Code的安装和操作请参照教程前文。</p>
+<h3 id="安装-MinGW"><a href="#安装-MinGW" class="headerlink" title="安装 MinGW"></a>安装 MinGW</h3><p><del>PVP</del>大佬可以访问 <a target="_blank" rel="noopener" href="https://www.mingw-w64.org/downloads">MinGW官网</a> 选择适合你的版本，小白可以直接跟着我的步骤下：</p>
 <ul>
-<li>左侧按键栏 -&gt; 拓展 -&gt; Code Runner -&gt; 小齿轮 -&gt; 扩展设置 -&gt; Code-runner: Executor Map -&gt; 在 settings.json 中编辑（配置插件设置的通解）</li>
+<li>访问 <a target="_blank" rel="noopener" href="https://github.com/niXman/mingw-builds-binaries/releases">https://github.com/niXman/mingw-builds-binaries/releases</a></li>
+<li>32位系统安装 i686-13.2.0-release-posix-dwarf-ucrt-rt_v11-rev0.7z</li>
+<li>64位系统安装 x86_64-13.2.0-release-posix-seh-ucrt-rt_v11-rev0.7z</li>
 </ul>
-<p>由此我们可以发现 Code Runner 插件的配置位于 VS Code 的用户全局配置文件 settings.json 中，你也有许多别的方法可以找到 settings.json 文件：</p>
-<ul>
-<li>C:\Users&lt;用户名&gt;\AppData\Roaming\Code\User\settings.json 直接打开</li>
-<li>左侧按键栏 -&gt; 个人资料 -&gt; 设置 —— settings.json</li>
-<li>文件(F) -&gt; 首选项 -&gt; 配置文件(默认) -&gt; 显示配置文件 -&gt; 设置 —— settings.json</li>
-<li>左下角齿轮设置 -&gt; 配置文件(默认) -&gt; 显示配置文件 -&gt; 设置 —— settings.json</li>
-</ul>
-<p><del>就是主打一个什么都教</del></p>
-<p>在 settings.json 中找到 “code-runner.executorMap” 对象，找到对应的语言修改对应的指令即可。</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="如何调试C语言代码"><a href="#如何调试C语言代码" class="headerlink" title="如何调试C语言代码"></a>如何调试C语言代码</h2><h3 id="对-vscode-配置文件夹的初步认识"><a href="#对-vscode-配置文件夹的初步认识" class="headerlink" title="对 .vscode 配置文件夹的初步认识"></a>对 .vscode 配置文件夹的初步认识</h3><p>还记得你在新建 .c 文件时自动生成的 .vscode 文件夹吗？里面存放着你可以用到的 .json 配置文件。</p>
-<p>例如 launch.json，它实际上就负责告诉 VS Code 你每次按下 F5 启动调试时应该如何执行。比如，可执行文件是应该生成在和 .c 源文件同一目录下，还是生成在一个指定的文件夹，比如 <code>\build</code> 下呢？应该用 GDB 作为调试器还是选择 LLDB 呢？这些都是你可以在配置文件中配置的。</p>
+<p>文件名里的 13.2.0 是版本名，你下载更加新的版本也可以，截至我截稿的时候反正最新版还是 13.2.0 ；下载完安装包并解压后，把解压好的文件夹找个合适的地方放起来，别放在<strong>桌面</strong>或者<strong>下载</strong>里，那样你可能会随手删掉的。</p>
+<p>接下来是很重要的一步，添加名为 (PATH) 的环境变量，如果你想了解环境变量的作用，建议先阅读下文；</p>
+<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a>添加环境变量</h3><p>在任务栏的搜索框直接搜，直接在屏幕下方任务栏的搜索框中输入 <code>path</code> ，在弹出的选项中就可以进入编辑环境变量页面。至于多记几种方法也没什么用，你只要知道环境变量很重要，想不起来的时候去bing搜一下就行了。</p>
+<p>在弹出的窗口中找到 <strong>环境变量</strong> 按钮，双击用户变量或是系统变量中的 <code>Path</code> 变量，选择新建变量，将你解压出来的文件夹中 <code>\bin</code> 文件夹的完整路径填写到文本框中并保存就可以了。你可以使用如下命令验证mingw是否成功添加了环境变量：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs PowerShell">gcc -<span class="hljs-literal">-version</span><br>g++ -<span class="hljs-literal">-version</span><br></code></pre></td></tr></table></figure>
+
+<p>如果没成功可以试试重启电脑。</p>
 
                 
               </div>
@@ -359,7 +329,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Development-Progarmming/" class="category-chain-item">Development &amp; Progarmming</a>
+  <a href="/categories/Share-Misc/" class="category-chain-item">Share &amp; Misc</a>
   
   
 
@@ -374,7 +344,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/C-Windows-WSL-GCC-Clang-VScode/">#C Windows WSL GCC Clang VScode</a>
+        <a href="/tags/C-VScode-MinGW/">#C VScode MinGW</a>
       
     </div>
   
@@ -386,8 +356,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Noob C 其三：使用 VS Code 开始编写 C&amp;C++ 代码</div>
-      <div>https://nanodaovo.github.io/2024/05/23/vsc_c&amp;c++_startcoding/</div>
+      <div>Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW</div>
+      <div>https://nanodaovo.github.io/2024/05/31/vsc_c&amp;c++_mingw/</div>
     </div>
     <div class="license-meta">
       
@@ -399,7 +369,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年5月23日</div>
+          <div>2024年5月31日</div>
         </div>
       
       
@@ -431,18 +401,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/05/27/mhw_note/" title="怪物猎人世界-冰原笔记">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">怪物猎人世界-冰原笔记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/19/steam_background_beautify/" title="Steam个人资料背景美化教程">
-                        <span class="hidden-mobile">Steam个人资料背景美化教程</span>
+                      <a href="/2024/05/27/mhw_note/" title="怪物猎人世界-冰原笔记">
+                        <span class="hidden-mobile">怪物猎人世界-冰原笔记</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
