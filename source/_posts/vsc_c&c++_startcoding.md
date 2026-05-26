@@ -19,7 +19,7 @@ banner_img: https://pixiv.nl/118435208.jpg
 - [Noob C 其一：为什么我使用 Visual Studio Code](https://nanodaovo.github.io/2023/11/21/vsc_rec/)
 - [Noob C 其二：在 Windows 上 使用 VS Code 配置 C&C++ 开发环境](https://nanodaovo.github.io/2023/11/22/vsc_c&c++/)
 - Noob C 其三：使用 VS Code 开始编写 C&C++ 代码（本教程）
-- [Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW](https://nanodaovo.github.io/2024/05/31/vsc_mingw)
+- [Noob C 外传：VS Code + MinGW](https://nanodaovo.github.io/2024/05/31/vsc_mingw)
 
 ## VS Code 核心概念 —— 工作区
 

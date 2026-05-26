@@ -2,7 +2,7 @@
 title: Noob C 其一：为什么我用 Visual Studio Code 写 C
 date: 2023-11-21 23:10:00
 updated: 2024-5-30 23:55:00
-categories: Share & Misc
+categories: Development & Progarmming
 tags: C VScode
 index_img: https://pixiv.nl/82752479.jpg
 banner_img: https://pixiv.nl/82752479.jpg
@@ -19,7 +19,7 @@ banner_img: https://pixiv.nl/82752479.jpg
 - Noob C 其一：为什么我使用 Visual Studio Code（本教程）
 - [Noob C 其二：在 Windows 上 使用 VS Code 配置 WSL C&C++ 开发环境](https://nanodaovo.github.io/2023/11/22/vsc_c&c++/)
 - [Noob C 其三：使用 VS Code 开始编写 C&C++ 代码](https://nanodaovo.github.io/2024/05/23/vsc_c&c++_startcoding/)
-- [Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW](https://nanodaovo.github.io/2024/05/31/vsc_mingw)
+- [Noob C 外传：VS Code + MinGW](https://nanodaovo.github.io/2024/05/31/vsc_mingw)
 
 ## 文本编辑器、编译器、集成开发环境 (IDE) 的区别
 

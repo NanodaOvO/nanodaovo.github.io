@@ -1,8 +1,8 @@
 ---
-title: Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW
+title: Noob C 外传：VS Code + MinGW
 date: 2024-05-31 15:48:00
 updated: 
-categories: Share & Misc
+categories: Development & Progarmming
 tags: C VScode MinGW
 index_img: https://pixiv.nl/.jpg
 banner_img: https://pixiv.nl/.jpg
@@ -17,7 +17,7 @@ banner_img: https://pixiv.nl/.jpg
 - [Noob C 其一：为什么我使用 Visual Studio Code](https://nanodaovo.github.io/2023/11/21/vsc_rec/)
 - [Noob C 其二：在 Windows 上 使用 VS Code 配置 C&C++ 开发环境](https://nanodaovo.github.io/2023/11/22/vsc_c&c++/)
 - [Noob C 其三：使用 VS Code 开始编写 C&C++ 代码](https://nanodaovo.github.io/2024/05/23/vsc_c&c++_startcoding/)
-- Noob C 外传：令人忍俊不禁 —— 笑点解析之 VS Code + MinGW（本教程）
+- Noob C 外传：VS Code + MinGW（本教程）
 
 ## VS Code + Windows + MinGW
 
