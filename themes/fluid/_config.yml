@@ -1015,6 +1015,12 @@ links:
       avatar: "https://avatars.githubusercontent.com/u/88923783"
     }
   - {
+      title: "Bill Ma's blog",
+      intro: "And remember the truth that once was spoken, to love another person is to see the face of God.",
+      link: "https://billma.top",
+      avatar: "https://repo.billma.top/30C957A2E6E5424A8C4A2CF9353B23D7.png"
+    }
+  - {
       title: "",
       intro: "",
       link: "",
