@@ -4,8 +4,8 @@ date: 2024-05-27 22:00:00
 updated: 
 categories: Share & Misc
 tags: Game
-index_img: https://pixiv.nl/116001510.jpg
-banner_img: https://pixiv.nl/116001510.jpg
+index_img: /img/mhw_note-116001510_p0.jpg
+banner_img: /img/mhw_note-116001510_p0.jpg
 ---
 
 ## 前言

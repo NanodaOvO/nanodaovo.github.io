@@ -4,8 +4,8 @@ date: 2024-05-23 19:36:00
 updated: 
 categories: Development & Progarmming
 tags: C Windows WSL GCC Clang VScode
-index_img: https://pixiv.nl/118435208.jpg
-banner_img: https://pixiv.nl/118435208.jpg
+index_img: /img/vsc_c&c++_startcoding-118435208_p0.jpg
+banner_img: /img/vsc_c&c++_startcoding-118435208_p0.jpg
 ---
 
 ## 前言

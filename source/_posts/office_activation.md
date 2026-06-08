@@ -4,8 +4,8 @@ date: 2023-11-27 20:25:00
 updated: 2023-12-26 22:00:00
 categories: Share & Misc
 tags: Office
-index_img: https://pixiv.nl/71429940.jpg
-banner_img: https://pixiv.nl/71429940.jpg
+index_img: /img/office_activation-71429940_p0.png
+banner_img: /img/office_activation-71429940_p0.png
 ---
 
 # 前言

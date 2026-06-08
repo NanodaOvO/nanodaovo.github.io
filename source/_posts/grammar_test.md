@@ -1,11 +1,11 @@
 ---
 title: MarkDown 语法测试
 date: 2023-10-12 12:00:00
-updated: 2023-10-15 16:00:00
+updated: 2025-06-09 18:00:00
 categories: Share & Misc
 tags: Test
-index_img: https://pixiv.nl/84803644.jpg
-banner_img: https://pixiv.nl/84803644.jpg
+index_img: /img/grammar_test-84803644_p0.png
+banner_img: /img/grammar_test-84803644_p0.png
 ---
 
 先把正版教程放在前面 [markdown官方教程](https://markdown.com.cn/basic-syntax)
@@ -276,8 +276,9 @@ $$
 
 如果你想插入pixiv上的插图，可以使用 [pixiv图片代理](https://pixiv.re/) ，只需要输入 Pixiv ID 或 pixiv 作品网址就可以快速生成markdown代码了，不仅方便还省去了图片加载不出的麻烦，下面这张图片的链接便是从 [pixiv图片代理](https://pixiv.re/) 获取的markdown代码修改而成。
 
-记得将所得链接（例：https://pixiv.cat/11111111.jpg）中的 .cat **修改为.re** ！
+记得将所得链接（例：https://pixiv.cat/1234567.jpg）中的 .cat **修改为.re 或 .nl**
 .cat结尾的域名被污染，无法正常访问，图片也就不能在国内网络下显示了。虽然直连很艰难但是还是能连上的，总不能连上了没图看叭（
+注:
 
 `![pixiv.re](https://pixiv.re/89658155.jpg "响爷可爱")`
 

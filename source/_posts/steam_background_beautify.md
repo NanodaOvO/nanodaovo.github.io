@@ -1,11 +1,11 @@
 ---
 title: Steam个人资料背景美化教程
 date: 2024-03-19 16:50:00
-updated: 2024-06-06 10:40:00
+updated: 2025-06-09 18:00:00
 categories: Share & Misc
 tags: Steam Background
-index_img: https://pixiv.nl/104212779.jpg
-banner_img: https://pixiv.nl/104212779.jpg
+index_img: /img/steam_background_beautify-104212779_p0.jpg
+banner_img: /img/steam_background_beautify-104212779_p0.jpg
 ---
 
 ### 前言
@@ -24,7 +24,7 @@ banner_img: https://pixiv.nl/104212779.jpg
 
 精选艺术作品展柜的效果如下：
 
-![](https://mirror.ghproxy.com/https://raw.githubusercontent.com/NanodaOvO/PictureHost/main/steam_background_beautify_1.png)
+![](https://raw.githubusercontent.com/NanodaOvO/PictureHost/main/steam_background_beautify_1.png)
 
 ### 获取裁剪好的图片
 

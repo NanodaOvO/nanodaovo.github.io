@@ -4,8 +4,8 @@ date: 2024-05-31 15:48:00
 updated: 
 categories: Development & Progarmming
 tags: C VScode MinGW
-index_img: https://pixiv.nl/139758688.jpg
-banner_img: https://pixiv.nl/139758688.jpg
+index_img: vsc_c&c++_mingw-57793944_p0.png
+banner_img: vsc_c&c++_mingw-57793944_p0.png
 ---
 
 ## 前言

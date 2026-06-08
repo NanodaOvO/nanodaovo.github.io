@@ -4,8 +4,8 @@ date: 2023-11-21 23:10:00
 updated: 2024-5-30 23:55:00
 categories: Development & Progarmming
 tags: C VScode
-index_img: https://pixiv.nl/82752479.jpg
-banner_img: https://pixiv.nl/82752479.jpg
+index_img: /img/vsc_rec-82752479_p0.png
+banner_img: /img/vsc_rec-82752479_p0.png
 ---
 
 ## 前言
