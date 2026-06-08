@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
 <meta property="og:description" content="前言本文的全篇内容都是在基于玩家拥有冰原DLC的情况下讨论的。 设置修改游戏设置 -&gt; 视角的导虫自动追踪设置：不追踪 操控 -&gt; 自动纳刀设置：关 操控 -&gt; 键盘设置 - &gt; 近身武器设置 -&gt; 武器·显示投射器的准心（按一次）：V 视角 -&gt; 聚焦目标方式：不注意目标 投射器弹药武器大剑虫棍猎虫相关基础操作点灯当一个合格的虫棍🦐首先要学会点灯。把视角移向">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pixiv.nl/116001510.jpg">
+<meta property="og:image" content="https://nanodaovo.github.io/img/mhw_note-116001510_p0.jpg">
 <meta property="article:published_time" content="2024-05-27T22:00:00.000Z">
-<meta property="article:modified_time" content="2026-05-28T11:50:20.696Z">
+<meta property="article:modified_time" content="2026-06-08T18:04:33.582Z">
 <meta property="article:author" content="NanodaOvO">
 <meta property="article:tag" content="Game">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pixiv.nl/116001510.jpg">
+<meta name="twitter:image" content="https://nanodaovo.github.io/img/mhw_note-116001510_p0.jpg">
   
   
   
@@ -205,7 +205,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://pixiv.nl/116001510.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/mhw_note-116001510_p0.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -471,7 +471,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2026年5月28日</div>
+          <div>2026年6月8日</div>
         </div>
       
       
@@ -614,6 +614,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -807,6 +813,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 

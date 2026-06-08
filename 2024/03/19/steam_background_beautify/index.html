@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
 <meta property="og:description" content="前言最近做Steam个人资料美化的时候遇到了一些问题，决定自己搓一篇心得。 本文只介绍了「精选艺术作品展柜」&amp;「我的创意工坊展柜」，请记住这两个展柜的名字，以便你能在个人资料里正确地选择展柜。 可以在点数商店  -&gt; 个人资料 -&gt; 展柜里购买和升级展柜，「我的创意工坊展柜」可以升到三级，升级项目名为「您的创意工坊」。 精选艺术作品展柜 ——「一张完整的图」通常放置在所有展柜的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pixiv.nl/104212779.jpg">
+<meta property="og:image" content="https://nanodaovo.github.io/img/steam_background_beautify-104212779_p0.jpg">
 <meta property="article:published_time" content="2024-03-19T16:50:00.000Z">
-<meta property="article:modified_time" content="2024-06-06T10:40:00.000Z">
+<meta property="article:modified_time" content="2025-06-09T18:00:00.000Z">
 <meta property="article:author" content="NanodaOvO">
 <meta property="article:tag" content="Steam Background">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pixiv.nl/104212779.jpg">
+<meta name="twitter:image" content="https://nanodaovo.github.io/img/steam_background_beautify-104212779_p0.jpg">
   
   
   
@@ -205,7 +205,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://pixiv.nl/104212779.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/steam_background_beautify-104212779_p0.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -294,7 +294,7 @@
 <h2 id="精选艺术作品展柜-——「一张完整的图」"><a href="#精选艺术作品展柜-——「一张完整的图」" class="headerlink" title="精选艺术作品展柜 ——「一张完整的图」"></a>精选艺术作品展柜 ——「一张完整的图」</h2><p>通常放置在所有展柜的最上方，通过融入背景达到美化的效果；如果打算在下方也使用精选艺术作品展柜，相信看完下面的内容你也能举一反三.</p>
 <p>在Steam于 2021-01-12 更新了「精选艺术作品展柜」之后，传统二分型的「艺术作品展柜」的功能已经基本上被替代，我接下来也不会再介绍这种方法.（懒）</p>
 <p>精选艺术作品展柜的效果如下：</p>
-<p><img src="https://mirror.ghproxy.com/https://raw.githubusercontent.com/NanodaOvO/PictureHost/main/steam_background_beautify_1.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="https://raw.githubusercontent.com/NanodaOvO/PictureHost/main/steam_background_beautify_1.png" srcset="/img/loading.gif" lazyload></p>
 <h3 id="获取裁剪好的图片"><a href="#获取裁剪好的图片" class="headerlink" title="获取裁剪好的图片"></a>获取裁剪好的图片</h3><p>首先你得有拥有 <strong>一整张</strong> 裁剪好的背景图片，动的静的都行，静态的相对比较简单，动态的步骤较多.</p>
 <h4 id="获取静态图片"><a href="#获取静态图片" class="headerlink" title="获取静态图片"></a>获取静态图片</h4><ol>
 <li>Steam库存 -&gt; 高级筛选 -&gt; 个人资料背景 -&gt; 查看完整大小 -&gt; 复制弹出的浏览器页面中的网页URL</li>
@@ -431,7 +431,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年6月6日</div>
+          <div>2025年6月9日</div>
         </div>
       
       
@@ -574,6 +574,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -767,6 +773,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 

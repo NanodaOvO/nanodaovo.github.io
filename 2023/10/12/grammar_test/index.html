@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="NanodaOvO&#39;s Blog">
 <meta property="og:description" content="先把正版教程放在前面 markdown官方教程 请配合 源代码 阅读本文 ⚠⚠⚠WARNING!!!!你需要通过下载VScode或Typora来获取阅读本文的权限！⚠⚠⚠  安装VScode VScode 已经默认集成 markdown 文档编辑插件，无需额外安装插件 使用前请先记住如下快捷键： 打开 markdown 预览 Ctrl+Shift+V &#x2F; 右键文件名 -&gt; 打开预览 在右侧打">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://pixiv.nl/84803644.jpg">
+<meta property="og:image" content="https://nanodaovo.github.io/img/grammar_test-84803644_p0.png">
 <meta property="article:published_time" content="2023-10-12T12:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-09T18:00:00.000Z">
 <meta property="article:author" content="NanodaOvO">
 <meta property="article:tag" content="Test">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://pixiv.nl/84803644.jpg">
+<meta name="twitter:image" content="https://nanodaovo.github.io/img/grammar_test-84803644_p0.png">
   
   
   
@@ -205,7 +205,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://pixiv.nl/84803644.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/grammar_test-84803644_p0.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -456,7 +456,7 @@
 <p><img src="/img/109561822_p1.jpg" srcset="/img/loading.gif" lazyload alt="local" title="恋恋可爱"></p>
 <p>让我们再来试试插入站外图片</p>
 <p>如果你想插入pixiv上的插图，可以使用 <a target="_blank" rel="noopener" href="https://pixiv.re/">pixiv图片代理</a> ，只需要输入 Pixiv ID 或 pixiv 作品网址就可以快速生成markdown代码了，不仅方便还省去了图片加载不出的麻烦，下面这张图片的链接便是从 <a target="_blank" rel="noopener" href="https://pixiv.re/">pixiv图片代理</a> 获取的markdown代码修改而成。</p>
-<p>记得将所得链接（例：<a target="_blank" rel="noopener" href="https://pixiv.cat/11111111.jpg%EF%BC%89%E4%B8%AD%E7%9A%84">https://pixiv.cat/11111111.jpg）中的</a> .cat <strong>修改为.re</strong> ！<br>.cat结尾的域名被污染，无法正常访问，图片也就不能在国内网络下显示了。虽然直连很艰难但是还是能连上的，总不能连上了没图看叭（</p>
+<p>记得将所得链接（例：<a target="_blank" rel="noopener" href="https://pixiv.cat/1234567.jpg%EF%BC%89%E4%B8%AD%E7%9A%84">https://pixiv.cat/1234567.jpg）中的</a> .cat <strong>修改为.re 或 .nl</strong><br>.cat结尾的域名被污染，无法正常访问，图片也就不能在国内网络下显示了。虽然直连很艰难但是还是能连上的，总不能连上了没图看叭（<br>注:</p>
 <p><code>![pixiv.re](https://pixiv.re/89658155.jpg &quot;响爷可爱&quot;)</code></p>
 <p><img src="https://pixiv.re/89658155.jpg" srcset="/img/loading.gif" lazyload alt="pixiv.re" title="响爷可爱"></p>
 <p>下面那张图片则是用Base64编码存储的，天哪，她的源代码简直是地狱绘图=͟͟͞͞(꒪ᗜ꒪ ‧̣̥̇没什么必要还是别用这种方法了</p>
@@ -525,7 +525,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年10月15日</div>
+          <div>2025年6月9日</div>
         </div>
       
       
@@ -668,6 +668,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -861,6 +867,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
