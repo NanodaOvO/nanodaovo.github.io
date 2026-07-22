@@ -1,7 +1,7 @@
 ---
-title: Office 365 教育版白嫖 & 企业版KMS激活教程
+title: Office 365 教育版白嫖（已！无！） & 企业版KMS激活教程
 date: 2023-11-27 20:25:00
-updated: 2023-12-26 22:00:00
+updated: 2026-07-23 03:40:00
 categories: Share & Misc
 tags: Office
 index_img: /img/office_activation-71429940_p0.png
@@ -10,11 +10,17 @@ banner_img: /img/office_activation-71429940_p0.png
 
 # 前言
 
+Tips：此方法已于2024年8月1日失效，扫码微软收回了持续近十年的Office 365 A1 Plus，你现在只能 “白嫖” 网页版了，还是让我们将目光投向别的 Office 版本吧。~~大大方方微八分钱~~
+
+以下为23年撰写的原文：
+
 Microsoft Office，功能强大、稳定、兼容性好，没有广告。如果你需要一款强大的办公软件来应对学习和工作中的挑战，那请往下看吧。
 
 # Office 365 教育版白嫖
 
 Office 365教育版为你提供了整整 **1T** 的 Onedrive 网盘！虽然Onedrive用起来一言难尽，但没准你会用得上呢？
+
+~~Tips：已经没了，只有100G了~~
 
 ## 准备工作：确认学校是否和微软合作
 
@@ -32,15 +38,15 @@ Office 365教育版为你提供了整整 **1T** 的 Onedrive 网盘！虽然Oned
 
 在 [**常州大学官网**](https://www.cczu.edu.cn/main.htm) 右上角找到 [**一网通办**](https://zmvpn.cczu.edu.cn/http/webvpnb4628df0d7b77a6d0f08dfc00aa8d59c2c964ac696c57b03b13c3b6f0ee2cb8c/pc/index.html) 入口，登录你的一网通办账号；
 
-![github](https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_1.png)
+![Github](https://ghproxy.net/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_1.png)
 
 进入 **服务大厅** 页面下的 **学生** 大类；
 
-![github](https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_2.png)
+![Github](https://ghproxy.net/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_2.png)
 
 在 **生活服务** 分类中找到 **邮箱自注册**；
 
-![github](https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_3.png)
+![Github](https://ghproxy.net/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_3.png)
 
 继续跟随引导进行邮箱的注册。注册完毕后便可以访问 [**常大邮箱**](http://mail.smail.cczu.edu.cn/) `mail.smail.cczu.edu.cn` 来接收邮件了。
 
@@ -65,7 +71,7 @@ Office 365教育版为你提供了整整 **1T** 的 Onedrive 网盘！虽然Oned
 
 4.点击 **开始部署** 即可开始安装！
 
-![github](https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_4.png)
+![Github](https://ghproxy.net/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_4.png)
 
 等待安装完成，在Office 365中登录你的学校工作邮箱就正式完成全部流程了。此外，学校邮箱还能帮助你通过Github Education的学生认证。（教程呢？在写了在写了）
 
@@ -83,7 +89,7 @@ Office 365教育版为你提供了整整 **1T** 的 Onedrive 网盘！虽然Oned
 
 - 更新通道选择 **半年度企业通道**
 
-![github](https://mirror.ghproxy.com/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_5.png)
+![Github](https://ghproxy.net/https://github.com/NanodaOvO/PictureHost/blob/main/office-activation_5.png)
 
 点击开始部署即可开始安装，请稍作等待。
 
